@@ -39,50 +39,75 @@
 // .🍺{beer:everything}
 
 //*{-webkit-transition: .3s all;}
+=font($alias, $name)
+	@font-face
+		font-family: $alias
+		src: url('fonts/'+$name+'.eot')
+		src: url("fonts/"+$name+".eot?#iefix") format("embedded-opentype"), url("fonts/"+$name+".woff") format("woff"), url("fonts/"+$name+".ttf") format("truetype")
+		font-weight: normal
+		font-style: normal
+
+
++font(black, cytiapro-black-webfont)
++font(regular, cytiapro-regular-webfont) 
++font(medium, cytiapro-medium-webfont)
++font(light, cytiapro-light-webfont)
+
+=black
+	font-family: black, sans-serif 
+=reg
+	font-family: regular, sans-serif 
+=med
+	font-family: medium, sans-serif 
+=light
+	font-family: light, sans-serif 	
+
 
 *
-  margin: 0
-  padding: 0
+	margin: 0
+	padding: 0
 
 +iphone
-  *
-    -webkit-text-size-adjust: none
+	*
+		-webkit-text-size-adjust: none
 
 
 button::-moz-focus-inner
-  padding: 0
-  border: 0
+	padding: 0
+	border: 0
 
 input[type="submit"]::-moz-focus-inner
-  padding: 0
-  border: 0
+	padding: 0
+	border: 0
 
 body
-  font:
-    family: Arial,sans-serif
-    weight: normal
-    size: 12px
-  line-height: 1.4
+	font:
+		family: Arial,sans-serif
+		weight: normal
+		size: 12px
+	line-height: 1.4
+	+reg
+	background: #000 
 
 // resets
 a img,fieldset
-  border: none
+	border: none
 
 // common styles, these could be attached to any block with "@extend %wyswyg;"
 %wyswyg
-  p
-    margin-bottom: 1em
-  ul,ol
-    margin: 1em 2em
-    list-style: disc
-  ol
-    list-style: decimal
-  blockquote
-    margin: 1em 2em
-  table
-    border-spacing: 0
-    border-collapse: collapse
-    width: 100%
-    td
-      border: 1px solid #ccc
-      padding: 5px
+	p
+		margin-bottom: 1em
+	ul,ol
+		margin: 1em 2em
+		list-style: disc
+	ol
+		list-style: decimal
+	blockquote
+		margin: 1em 2em
+	table
+		border-spacing: 0
+		border-collapse: collapse
+		width: 100%
+		td
+			border: 1px solid #ccc
+			padding: 5px
