@@ -1,13 +1,240 @@
 // Normally mainpage styles
-
+%in
+	width: 960px 
+	margin: 0 auto 
+	position: relative
+%button
+	+med
+	height: 37px 
+	line-height: 37px
+	padding: 0 20px
+	background: #00FFFE
+	font-size: 15px    
+	text-transform: uppercase
+	text-decoration: none
+	color: #000 
+	display: inline-block
 .footer
 	background: url(../img/map.jpg) no-repeat 50% 50%
 	+background-size(cover)
-	padding: 55px 0 75px 60px
+	padding: 55px 0 70px 0
 	overflow: hidden
 	position: relative
+	min-width: 960px 
+	.footer__in
+		@extend %in
 	.footer__logo
 		position: absolute
-		left: 60px
-		top: 55px  
+		left: -20px
+		top: 0  
 		+s(logo-black)
+	.footer__address
+		+m(4)
+		+w(4)
+		font-size: 25px 
+		line-height: 1.3 
+		position: relative
+		top: -3px 
+		float: left
+	.footer__emails
+		float: left
+		margin-left: 20px 
+		+w(3)
+		font-size: 18px 
+		a
+			color: #000 
+
+.header
+	background: #000 
+	position: relative
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0    
+		background: #000 url(../img/bg.jpg) no-repeat 50% 0
+		+background-size(cover)
+		z-index: 1 
+		opacity: .3 
+	height: 720px 
+	.header__in
+		@extend %in
+		padding-top: 140px 
+		position: relative
+		z-index: 2 
+	.header__top
+		border-bottom: 1px solid #fff
+		padding-bottom: 20px 
+		margin-bottom: 22px 
+	.header__logo
+		+s(logo-white)
+		display: inline-block
+		position: relative
+		left: -20px 
+		@extend hide-text
+	h2
+		font-size: 32px 
+		font-weight: normal
+		color: #fff 
+		line-height: 1.2 
+		margin-bottom: 140px 
+		span
+			display: block
+			+black
+			font-size: 38px 
+	.header__findout
+		@extend %button
+		position: relative
+		left: -20px 
+			
+.aboutus
+	background: #fff
+	.aboutus__in,.aboutus__head span
+		@extend %in
+		display: block
+	.aboutus__head
+		background: #000 
+		color: #fff
+		+med
+		font-size: 54px  
+		line-height: 1.1 
+		padding: 20px 0
+		position: relative
+		font-weight: normal
+		span
+			&:before
+				content: ' '
+				position: absolute
+				left: -30px 
+				top: 8px
+				width: 20px 
+				background: #00FFFE 
+				height: 10px 
+	.aboutus__content
+		@extend %in
+		background: #fff 
+		padding: 26px 0 63px 0
+		overflow: hidden
+	.aboutus__col
+		+w(4)
+		margin-right: 20px 
+		float: left
+		font-size: 14px  
+		h3
+			font-size: 42px 
+			font-weight: normal
+			+light
+			text-transform: uppercase
+			margin-bottom: 2px 
+	.aboutus__more
+		+w(4)
+		float: right
+		clear: left
+		padding-right: 20px 
+		left: 20px
+		a
+			@extend %button
+			display: block
+			margin-right: -20px 
+			padding-right: 0 
+			i
+				+s(arrow)
+				display: inline-block
+				margin-left: 9px 
+				position: relative
+				top: 4px 
+	.aboutus__icon
+		min-height: 156px 
+		i
+			display: inline-block
+	.icon-simplicity
+		+s(simplicity)
+	.icon-leadership
+		+s(leadership)
+	.icon-innovations
+		+s(innovations)
+	
+.pro
+	background: #000
+	padding-top: 20px 
+	position: relative
+	padding-bottom: 46px 
+	padding-top: 25px 
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0    
+		background: #000 url(../img/bg.jpg) no-repeat 50% 100%
+		+background-size(cover)
+		z-index: 1 
+		opacity: .3 
+	.pro__in
+		@extend %in
+		position: relative
+		z-index: 3 
+	.pro__head
+		color: #fff
+		+med
+		font-size: 54px  
+		line-height: 1.1 
+		margin: 0 0 20px 0
+		position: relative
+		font-weight: normal
+		margin-bottom: 30px 
+		&:before
+			content: ' '
+			position: absolute
+			left: -30px 
+			top: 8px
+			width: 20px 
+			background: #00FFFE 
+			height: 10px 
+	.pro__field
+		margin-bottom: 44px 
+		overflow: hidden
+		color: #fff 
+	.pro__label
+		+light
+		font-size: 42px
+		font-weight: normal
+		text-transform: uppercase
+		float: left
+		line-height: 1 
+		+w(3) 
+	.pro__col
+		+w(4)
+		font-size: 18px 
+		margin-right: 20px 
+		float: left
+		font-size: 18px 
+		ul
+			list-style: none
+		li
+			margin-bottom: 5px 
+	.pro__links
+		list-style: none
+		width: 100% 
+		display: inline-block
+		li
+			float: left
+			background: #00FDFC
+			text-transform: uppercase
+			color: #000  
+			text-decoration: none
+			+w(4)
+			margin-right: 20px 
+			a
+				height: 71px 
+				line-height: 1.2
+				padding: 8px 20px
+				background: #00FFFE
+				font-size: 15px    
+				text-transform: uppercase
+				text-decoration: none
+				color: #000 
+				display: inline-block
