@@ -1,0 +1,61 @@
+.content
+	background: #F0F0F0 
+	overflow: hidden
+	padding-bottom: 40px 
+	.content__in	
+		@extend %in
+		
+		
+	.content__col3
+		float: left
+		position: relative
+		right: -20px 
+		+w(4)
+		margin-right: 20px 
+		&.is-last
+			margin-right: 0 
+		.h3
+			margin-right: -20px 
+.h3
+	font-weight: normal
+	+light
+	font-size: 42px 
+	line-height: 1 
+	color: #000
+	margin-bottom: 13px 
+	text-transform: uppercase
+	letter-spacing: -1px 
+	a
+		color: #000
+		text-decoration: none 
+ul+h3
+	margin-top: 60px 
+.links
+	list-style: none
+	li
+		margin-bottom: 12px 
+		margin-right: -20px 
+	a
+		@extend %button
+		display: block
+		position: relative
+		i
+			+s(arrow)
+			display: inline-block
+			position: absolute
+			right: 10px 
+			top: 50%
+			margin-top: -10px  
+.f
+	margin-bottom: 20px 
+	list-style: none
+	li
+		margin-bottom: 18px 
+		font-size: 14px 
+		+reg
+		strong
+			display: block
+			font-size: 18px 
+			+black
+			font-weight: normal
+	

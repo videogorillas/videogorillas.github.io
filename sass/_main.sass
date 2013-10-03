@@ -14,82 +14,7 @@
 	text-decoration: none
 	color: #000 
 	display: inline-block
-.footer
-	background: #E6E6E6
-	+background-size(cover)
-	padding: 28px 0 70px 0
-	overflow: hidden
-	position: relative
-	min-width: 960px 
-	.footer__in
-		@extend %in
-	.footer__logo
-		position: absolute
-		left: -20px
-		top: 0  
-		+s(logo-black)
-	.footer__address
-		+m(3)
-		+w(5)
-		font-size: 24px 
-		line-height: 1.3 
-		position: relative
-		top: -3px 
-		float: left
-		padding-top: 20px  
-	.footer__emails
-		float: left
-		margin-left: 20px 
-		padding-top: 20px 
-		+w(3)
-		font-size: 18px 
-		a
-			color: #000 
 
-.header
-	background: #000 
-	position: relative
-	&:before
-		content: ' '
-		position: absolute
-		top: 0
-		left: 0
-		right: 0
-		bottom: 0    
-		background: #000 url(../img/bg.jpg) no-repeat 50% 0
-		+background-size(cover)
-		z-index: 1 
-		opacity: .3 
-	height: 720px 
-	.header__in
-		@extend %in
-		padding-top: 140px 
-		position: relative
-		z-index: 2 
-	.header__top
-		border-bottom: 1px solid #fff
-		padding-bottom: 20px 
-		margin-bottom: 22px 
-	.header__logo
-		+s(logo-white)
-		display: inline-block
-		position: relative
-		left: -20px 
-		@extend hide-text
-	h2
-		font-size: 32px 
-		font-weight: normal
-		color: #fff 
-		line-height: 1.2 
-		margin-bottom: 140px 
-		span
-			display: block
-			+black
-			font-size: 38px 
-	.header__findout
-		@extend %button
-		position: relative
-		left: -20px 
 			
 .aboutus
 	background: #fff
@@ -134,8 +59,8 @@
 		+w(4)
 		float: right
 		clear: left
-		padding-right: 20px 
 		left: 20px
+		padding-right: 20px 
 		a
 			@extend %button
 			display: block
