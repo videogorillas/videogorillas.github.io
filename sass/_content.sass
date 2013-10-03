@@ -9,13 +9,14 @@
 	.content__col3
 		float: left
 		position: relative
-		right: -20px 
 		+w(4)
 		margin-right: 20px 
 		&.is-last
 			margin-right: 0 
 		.h3
 			margin-right: -20px 
+		&.is-wide
+			+w(8)
 .h3
 	font-weight: normal
 	+light
@@ -58,4 +59,35 @@ ul+h3
 			font-size: 18px 
 			+black
 			font-weight: normal
-	
+.text
+	font-size: 18px 
+	+reg
+	line-height: 1.4 
+	p
+		margin-bottom: 1em 
+	a
+		text-decoration: underline
+		color: #000
+.clients
+	background: #252525
+	padding: 20px 0 
+	.clients__in	
+		@extend %in
+	&+.content
+		padding-top: 40px 
+	h2
+		color: #fff
+		+med
+		font-size: 54px  
+		line-height: 1.1 
+		position: relative
+		font-weight: normal
+		span
+			&:before
+				content: ' '
+				position: absolute
+				left: -30px 
+				top: 8px
+				width: 20px 
+				background: #00FFFE 
+				height: 10px 

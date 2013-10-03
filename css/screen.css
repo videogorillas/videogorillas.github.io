@@ -43,7 +43,7 @@ a img, fieldset { border: none; }
 .header.header_alt .header__top, .header.header_white .header__top { border-color: black; }
 .header.header_alt .header__top li a, .header.header_white .header__top li a { color: black; }
 
-.footer .footer__in, .header .header__in, .aboutus .aboutus__in, .aboutus .aboutus__head span, .aboutus .aboutus__content, .pro .pro__in, .content .content__in { width: 960px; margin: 0 auto; position: relative; }
+.footer .footer__in, .header .header__in, .aboutus .aboutus__in, .aboutus .aboutus__head span, .aboutus .aboutus__content, .pro .pro__in, .content .content__in, .clients .clients__in { width: 960px; margin: 0 auto; position: relative; }
 
 .header .header__findout, .aboutus .aboutus__more a, .links a { font-family: medium, sans-serif; height: 37px; line-height: 37px; padding: 0 20px; background: #00fffe; font-size: 15px; text-transform: uppercase; text-decoration: none; color: black; display: inline-block; }
 
@@ -81,9 +81,10 @@ a img, fieldset { border: none; }
 .pro .pro__links li a { height: 71px; line-height: 1.2; padding: 8px 20px; background: #00fffe; font-size: 15px; text-transform: uppercase; text-decoration: none; color: black; display: inline-block; }
 
 .content { background: #f0f0f0; overflow: hidden; padding-bottom: 40px; }
-.content .content__col3 { float: left; position: relative; right: -20px; width: 300px; margin-right: 20px; }
+.content .content__col3 { float: left; position: relative; width: 300px; margin-right: 20px; }
 .content .content__col3.is-last { margin-right: 0; }
 .content .content__col3 .h3 { margin-right: -20px; }
+.content .content__col3.is-wide { width: 620px; }
 
 .h3 { font-weight: normal; font-family: light, sans-serif; font-size: 42px; line-height: 1; color: black; margin-bottom: 13px; text-transform: uppercase; letter-spacing: -1px; }
 .h3 a { color: black; text-decoration: none; }
@@ -98,3 +99,12 @@ ul + h3 { margin-top: 60px; }
 .f { margin-bottom: 20px; list-style: none; }
 .f li { margin-bottom: 18px; font-size: 14px; font-family: regular, sans-serif; }
 .f li strong { display: block; font-size: 18px; font-family: black, sans-serif; font-weight: normal; }
+
+.text { font-size: 18px; font-family: regular, sans-serif; line-height: 1.4; }
+.text p { margin-bottom: 1em; }
+.text a { text-decoration: underline; color: black; }
+
+.clients { background: #252525; padding: 20px 0; }
+.clients + .content { padding-top: 40px; }
+.clients h2 { color: white; font-family: medium, sans-serif; font-size: 54px; line-height: 1.1; position: relative; font-weight: normal; }
+.clients h2 span:before { content: " "; position: absolute; left: -30px; top: 8px; width: 20px; background: #00fffe; height: 10px; }
