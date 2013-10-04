@@ -38,7 +38,6 @@
 	background: #000 
 	position: relative
 	height: 720px 
-	
 	&:before
 		content: ' '
 		position: absolute
@@ -50,7 +49,6 @@
 		+background-size(cover)
 		z-index: 1 
 		opacity: .3 
-	
 	.header__in
 		@extend %in
 		padding-top: 140px 
@@ -108,3 +106,37 @@
 			li 
 				a
 					color: #000 
+	&.header_black
+		height: auto 
+		background: #252525 
+		padding-bottom: 20px 
+		.header__top
+			position: relative
+		&:before
+			display: none
+		&+.content
+			padding-top: 30px 
+.header__text
+	font-size: 18px 
+	color: #b7b7b7
+	h2
+		font-weight: normal
+		margin-bottom: 0
+		margin-bottom: 25px  
+		color: #fff
+		+med
+		font-size: 54px  
+		line-height: 1.1 
+		position: relative
+		font-weight: normal
+		span
+			&:before
+				content: ' '
+				position: absolute
+				left: -30px 
+				top: 5px
+				width: 20px 
+				background: #00FFFE 
+				height: 10px 
+	p
+		margin-bottom: 22px

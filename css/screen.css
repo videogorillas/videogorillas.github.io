@@ -42,6 +42,15 @@ a img, fieldset { border: none; }
 .header.header_alt .header__logo, .header.header_white .header__logo { background: url('../img/icons-s1da3f128e7.png') 0 -492px no-repeat; width: 176px; height: 39px; }
 .header.header_alt .header__top, .header.header_white .header__top { border-color: black; }
 .header.header_alt .header__top li a, .header.header_white .header__top li a { color: black; }
+.header.header_black { height: auto; background: #252525; padding-bottom: 20px; }
+.header.header_black .header__top { position: relative; }
+.header.header_black:before { display: none; }
+.header.header_black + .content { padding-top: 30px; }
+
+.header__text { font-size: 18px; color: #b7b7b7; }
+.header__text h2 { font-weight: normal; margin-bottom: 0; margin-bottom: 25px; color: white; font-family: medium, sans-serif; font-size: 54px; line-height: 1.1; position: relative; font-weight: normal; }
+.header__text h2 span:before { content: " "; position: absolute; left: -30px; top: 5px; width: 20px; background: #00fffe; height: 10px; }
+.header__text p { margin-bottom: 22px; }
 
 .footer .footer__in, .header .header__in, .aboutus .aboutus__in, .aboutus .aboutus__head span, .aboutus .aboutus__content, .pro .pro__in, .content .content__in, .clients .clients__in { width: 960px; margin: 0 auto; position: relative; }
 
@@ -88,6 +97,7 @@ a img, fieldset { border: none; }
 
 .h3 { font-weight: normal; font-family: light, sans-serif; font-size: 42px; line-height: 1; color: black; margin-bottom: 13px; text-transform: uppercase; letter-spacing: -1px; }
 .h3 a { color: black; text-decoration: none; }
+.h3 span { display: block; font-size: 24px; }
 
 ul + h3 { margin-top: 60px; }
 
