@@ -24,7 +24,7 @@
 // ## making bw-images
 //     img{@extend %gray;}
 // ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     @min-screen(320){ css goes here}
+//     @include min-screen(320){ css goes here}
 // @max-screen(1000), @iphone5, @iphone4, @ipad-retina, @ipad, @hdpi - also available
 //
 // ## use cycles
@@ -34,6 +34,8 @@
 //     @each $s in a,b,c{
 // 	    #{$s}
 //     }
+// ## fonts 
+// +font(black, cytiapro-black-webfont) // sass way
 // BTW these comments will not render into css
 // for awesomeness use .🍺 class. Example:
 // .🍺{beer:everything}
@@ -52,6 +54,7 @@
 +font(regular, cytiapro-regular-webfont) 
 +font(medium, cytiapro-medium-webfont)
 +font(light, cytiapro-light-webfont)
++font(bold, cytiapro-bold-webfont)
 
 =black
 	font-family: black, sans-serif 
@@ -60,16 +63,9 @@
 =med
 	font-family: medium, sans-serif 
 =light
-	font-family: light, sans-serif 	
-=w($n)
-	width: $n*60px + 20*($n - 1)
-=wg($n)
-	width: $n*60px + 20*$n
-=m($n)
-	margin-left: $n*60px + 20*$n
-
-
-
+	font-family: light, sans-serif 
+=bold
+	font-family: bold, sans-serif 
 *
 	margin: 0
 	padding: 0
@@ -94,7 +90,6 @@ body
 		size: 12px
 	line-height: 1.4
 	+reg
-	background: #000 
 
 // resets
 a img,fieldset

@@ -1,175 +1,127 @@
 // Normally mainpage styles
-%in
-	width: 960px 
+body>*
+	min-width: 940px 
 	margin: 0 auto 
-	position: relative
-%button
-	+med
-	height: 37px 
-	line-height: 37px
-	padding: 0 20px
-	background: #00FFFE
-	font-size: 15px    
-	text-transform: uppercase
-	text-decoration: none
-	color: #000 
-	display: inline-block
 
-			
-.aboutus
-	background: #fff
-	.aboutus__in,.aboutus__head span
-		@extend %in
-		display: block
-	.aboutus__head
-		background: #000 
-		color: #fff
-		+med
-		font-size: 54px  
-		line-height: 1.1 
-		padding: 20px 0
-		position: relative
-		font-weight: normal
-		span
-			&:before
-				content: ' '
-				position: absolute
-				left: -30px 
-				top: 8px
-				width: 20px 
-				background: #00FFFE 
-				height: 10px 
-	.aboutus__content
-		@extend %in
-		background: #fff 
-		padding: 26px 0 63px 0
-		overflow: hidden
-	.aboutus__col
-		+w(4)
-		margin-right: 20px 
-		float: left
-		font-size: 14px  
-		h3
-			font-size: 42px 
-			font-weight: normal
-			+light
-			text-transform: uppercase
-			margin-bottom: 2px 
-	.aboutus__more
-		+w(4)
-		float: right
-		clear: left
-		left: 20px
-		padding-right: 20px 
-		a
-			@extend %button
-			display: block
-			margin-right: -20px 
-			padding-right: 0 
-			i
-				+s(arrow)
-				display: inline-block
-				margin-left: 9px 
-				position: relative
-				top: 4px 
-	.aboutus__icon
-		min-height: 156px 
-		i
-			display: inline-block
-	.icon-simplicity
-		+s(simplicity)
-	.icon-leadership
-		+s(leadership)
-	.icon-innovations
-		+s(innovations)
-	
-.pro
-	background: #000
-	padding-top: 20px 
+.header
+	height: 100% 
+	height: 100vh
 	position: relative
-	padding-bottom: 46px 
-	padding-top: 25px 
-	&:before
-		content: ' '
+	h1
 		position: absolute
-		top: 0
+		width: 448px 
+		height: 222px 
+		background:  url(../img/vglogo.svg) no-repeat 0 0
+		background-size: contain 
+		@extend %hide-text
+		left: 50%
+		top: 50%
+		margin-top: -181px   
+		margin-left: -239px + 20px
+	.header__bot
+		position: absolute
+		bottom: 25px
 		left: 0
-		right: 0
-		bottom: 0    
-		background: #000 url(../img/bg.jpg) no-repeat 50% 100%
-		+background-size(cover)
-		z-index: 1 
-		opacity: .3 
-	.pro__in
-		@extend %in
-		position: relative
-		z-index: 3 
-	.pro__head
-		color: #fff
-		+med
-		font-size: 54px  
-		line-height: 1.1 
-		margin: 0 0 20px 0
-		position: relative
-		font-weight: normal
-		margin-bottom: 30px 
-		&:before
-			content: ' '
-			position: absolute
-			left: -30px 
-			top: 8px
-			width: 20px 
-			background: #00FFFE 
-			height: 10px 
-	.pro__field
-		margin-bottom: 44px 
-		overflow: hidden
-		color: #fff 
-	.pro__label
-		+light
-		font-size: 42px
-		font-weight: normal
-		text-transform: uppercase
-		float: left
-		line-height: 1 
-		+w(3) 
-	.pro__col
-		+w(4)
-		font-size: 18px 
-		margin-right: 20px 
-		float: left
-		font-size: 18px 
-		ul
-			list-style: none
-		li
-			margin-bottom: 5px 
-		&.pro__col_long
-			+wg(8)
-			li
-				float: left
-				+wg(2)
-				&.pro__long
-					+wg(5)
-	
-	.pro__links
-		list-style: none
-		width: 100% 
+		width: 100%
+		text-align: center
+		+reg
+		font-size: 18px   
+		strong
+			font-weight: normal
+			+bold
+			display: block
+			text-align: center
+			font-size: 24px 
+.screenshots
+	font-size: 0
+	overflow: hidden
+	margin-bottom: 60px 
+	a
 		display: inline-block
+		width: 25%
+		box-shadow: 0 0 0 1px #fff
+		+transition(all .1s ease-in-out)
+		&:hover
+			opacity: .7 
+		img
+			display: block
+			width: 100% 
+.patents
+	.patents__in
+		width: 940px
+		margin: 0 auto 
+	.patents__bot
+		font-size: 54px 
+		+bold
+		text-align: center
+		margin: 60px 0 80px 0 
+		line-height: 1.2 
+	h2
+		text-align: center
+		font-weight: normal
+		font-size: 36px 
+		text-transform: uppercase
+		margin-bottom: 30px 
+		margin-bottom: 40px 
+	ul
+		list-style: none
+		overflow: hidden
+		a
+			color: #000 
+			text-decoration: none
 		li
 			float: left
-			background: #00FDFC
-			text-transform: uppercase
-			color: #000  
-			text-decoration: none
-			+w(4)
-			margin-right: 20px 
-			a
-				height: 71px 
-				line-height: 1.2
-				padding: 8px 20px
-				background: #00FFFE
-				font-size: 15px    
-				text-transform: uppercase
-				text-decoration: none
-				color: #000 
-				display: inline-block
+			width: 25%
+		h3
+			text-decoration: underline
+			font-size: 12px 
+			font-weight: normal
+			+bold
+			margin-top: 15px 
+			margin-bottom: 10px 
+			text-decoration: underline
+		p
+			font-size: 18px 
+			line-height: 1.2 
+.video
+	background: #F8F8F8
+	.video__in
+		width: 940px
+		margin: 0 auto 
+		padding: 20px 0 
+		margin-bottom: 130px 
+		overflow: hidden
+	h3
+		font-size: 24px 
+		font-weight: normal
+		margin-bottom: 15px 
+	.video__next,.video__prev
+		font-size: 18px 
+		color: #000
+		padding-top: 10px 
+	.video__prev
+		float: left
+	.video__next
+		float: right
+.footer
+	.footer__in
+		width: 940px 
+		margin: 0 auto
+		overflow: hidden
+		line-height: 1.4 
+		padding-bottom: 50px 
+	.footer__logo
+		float: left
+		+s(vg)
+	.footer__emails
+		float: right
+		font-size: 18px 
+		+reg
+		a
+			text-decoration: underline
+			color: #000 
+	.footer__address
+		float: left
+		font-size: 18px 
+		margin-left: 60px 
+			
