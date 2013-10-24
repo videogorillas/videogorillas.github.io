@@ -33,9 +33,9 @@ body > * { min-width: 940px; margin: 0 auto; }
 .header .header__bot strong { font-weight: normal; font-family: bold, sans-serif; display: block; text-align: center; font-size: 24px; }
 
 .screenshots { font-size: 0; overflow: hidden; margin-bottom: 60px; }
-.screenshots a { display: inline-block; width: 25%; box-shadow: 0 0 0 1px white; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
-.screenshots a:hover { opacity: 0.7; }
-.screenshots a img { display: block; width: 100%; }
+.screenshots .img { display: inline-block; width: 25%; box-shadow: 0 0 0 1px white; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.screenshots .img:hover { opacity: 0.7; }
+.screenshots .img img { display: block; width: 100%; }
 
 .patents .patents__in { width: 940px; margin: 0 auto; }
 .patents .patents__bot { font-size: 54px; font-family: bold, sans-serif; text-align: center; margin: 60px 0 80px 0; line-height: 1.2; }
