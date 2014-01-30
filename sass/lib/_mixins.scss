@@ -1,14 +1,19 @@
 // responsive example, edit or remove
-$break-small: 500px;
-$break-large: 1180px;
+$s1: 940px;
+$s2: 700px;
+$s3: 400px;
 @mixin r($media) {
-	@if $media == pda {
+	@if $media == step1 {
 		// narrower than $width
-		@media only screen and (max-width: $break-small) { @content; }
+		@media only screen and (max-width: $s1) { @content; }
 	}
-	@else if $media == wide {
-		// wider than $width
-		@media only screen and (min-width: $break-large) { @content; }
+	@if $media == step2 {
+		// narrower than $width
+		@media only screen and (max-width: $s2) { @content; }
+	}
+	@if $media == step3 {
+		// narrower than $width
+		@media only screen and (max-width: $s3) { @content; }
 	}
 }
 // retina bg
@@ -108,10 +113,10 @@ $break-large: 1180px;
 	hyphens: auto;
 }
 @mixin font-smoothing($val: antialiased) {
-	 -webkit-font-smoothing: $val;
-	 -moz-font-smoothing: $val;
-	 -ms-font-smoothing: $val;
-	 -o-font-smoothing: $val;
+	-webkit-font-smoothing: $val;
+	-moz-font-smoothing: $val;
+	-ms-font-smoothing: $val;
+	-o-font-smoothing: $val;
 }
 @mixin selection {
 	& ::selection {
