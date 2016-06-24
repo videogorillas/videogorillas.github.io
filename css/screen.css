@@ -51,7 +51,7 @@ body > * { margin: 0 auto; }
 .patents .patents__bot { font-size: 54px; font-family: bold, sans-serif; text-align: center; margin: 60px 0 80px 0; line-height: 1.2; }
 .patents h2 { text-align: center; font-weight: normal; font-size: 36px; text-transform: uppercase; margin-bottom: 30px; margin-bottom: 40px; }
 @media only screen and (max-width: 700px) { .patents h2 { font-size: 24px; } }
-.patents ul { list-style: none; overflow: hidden; font-size: 0; padding: 0 20px; }
+.patents ul { list-style: none; overflow: hidden; font-size: 0; padding: 0 20px 50px 0; }
 .patents ul a { color: black; text-decoration: none; }
 .patents ul li { float: left; width: 20%; }
 @media only screen and (max-width: 700px) { .patents ul li { width: 50%; float: none; display: inline-block; vertical-align: top; margin-bottom: 30px; text-align: center; } }
