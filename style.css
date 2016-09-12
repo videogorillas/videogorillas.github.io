@@ -1,0 +1,433 @@
+/* Main Elements */
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans';
+    position: relative;
+    margin: 0;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+div.wrapper {
+    height: 100% !important;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Paragraph */
+
+h1 {
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: 800;
+	font-size: 50px;
+	margin: 0;
+}
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: 800;
+	font-size: 35px;
+	margin: 0 0 20px;
+}
+
+h3 {
+	letter-spacing: -1px;
+	font-weight: 300;
+	font-size: 30px;
+	margin: 0 0 40px;
+}
+
+h4 {
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: 800;
+	font-size: 24px;
+	margin: 10px 0 20px;
+}
+
+h5 {
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	font-weight: 800;
+	font-size: 16px;
+	margin-bottom: 6px;
+	line-height: 30px;
+}
+
+p {
+	padding: 0 10px;
+	margin: 0 0 20px;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+p.small {
+	margin: 0 0 14px;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+div.lity-container ul {
+	line-height: 24px;
+	margin: 0 0 30px;
+	padding: 0;
+	list-style: none;
+}
+
+div.lity-container ul li {
+	padding-left: 20px;
+	font-size: 14px;
+	background: url('img/bullet.png') no-repeat left;
+	background-size: 10px 10px;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+a.underline {
+	text-decoration: underline;
+	color: rgba(255,255,255,0.7);
+	transition: color 0.3s;
+}
+
+a.underline:hover {
+	color: rgba(255,255,255,1);
+	transition: color 0.3s;
+}
+
+.button {
+	background: none;
+	font-family: "Open Sans";
+	display: inline-block;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 0px;
+	transition: all 0.3s;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #ee5780;
+}
+
+.button.button-white {
+	background-color: #fff;
+	color: #ee5780;
+}
+
+.button.button-white:hover {
+	background: none;
+	color: #fff;
+}
+
+/* Section Config */
+
+div.main {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.main section .page-container {
+    position: relative;
+    margin: 0 auto 0;
+    max-width: 950px;
+    z-index: 3;
+}
+
+div.main section {
+	position: relative;
+	z-index: 998;
+    overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	outline: 10px solid #fff;
+	outline-offset: -10px;
+}
+
+div.main section.section-no-border {
+	outline: none;
+}
+
+div.main section div.section-logo {
+	position: absolute;
+	z-index: 999;
+	top: 34px;
+	left: 34px;
+	width: 60px;
+	height: 30px;
+	background-color: #fff;
+	-webkit-mask-image: url(img/vg-logo.svg);
+	mask-image: url(img/vg-logo.svg);
+}
+
+div.main section > img {
+    position: absolute;
+    max-width: 100%;
+    z-index: 1;
+}
+
+/* Section Backgrounds */
+
+div.main section.page1 {
+    background: none;
+}
+
+div.main section.page2 {
+    background-image: url(img/bucket2.jpg);
+}
+
+div.main section.page3 {
+    background-image: url(img/bucket3.jpg);
+}
+
+div.main section.page4 {
+    background-image: url(img/bucket4.jpg);
+}
+
+div.main section.page5 {
+    background-image: url(img/bucket5.jpg);
+}
+
+div.main section.page6 {
+    background-image: url(img/bucket6.jpg);
+}
+
+/* Section Layout */
+
+div.main section div.hex {
+	opacity: 0;
+	transition: all 1s;
+	transform: translate(0px,-40px);
+}
+
+div.main section.active div.hex {
+	opacity: 1;
+	transition: all 1s;
+	transition-delay: 0.2s;
+		-webkit-transition-delay: 0.2s;
+	transform: translate(0,0);
+}
+
+div.main section.page1 div.vg-logo {
+	margin: 0 auto 20px;
+	width: 400px;
+	height: 200px;
+	background-image: url(img/vg-logo.svg);
+}
+
+div.main section.page2 div.hex-gorilla {
+	margin: 0 auto 20px;
+	width: 180px;
+	height: 180px;
+	background-size: 180px 180px;
+	background-image: url(img/hex-gorilla.png);
+}
+
+div.main section.page2 .button:hover {
+	color: #459FC3;
+}
+
+div.main section.page3 div.hex-work {
+	margin: 0 auto 20px;
+	width: 180px;
+	height: 180px;
+	background-size: 180px 180px;
+	background-image: url(img/hex-gear.png);
+}
+
+div.main section.page3 .button:hover {
+	color: #6253C1;
+}
+
+div.main section.page4 h3 {
+	margin-bottom: 46px;
+}
+
+div.main section.page4 div.column {
+	float: left;
+	margin: 0 20px;
+	width: 197px;
+}
+
+div.main section.page4 div.column h4 {
+	font-size: 20px;
+}
+
+div.main section.page4 div.hex-player {
+	margin: 0px auto 10px;
+	width: 110px;
+	height: 110px;
+	background-size: 110px 110px;
+	background-image: url(img/hex-play.png);
+}
+
+div.main section.page4 div.hex-live4 {
+	margin: 0px auto 10px;
+	width: 110px;
+	height: 110px;
+	background-size: 110px 110px;
+	background-image: url(img/hex-live4.png);
+}
+
+div.main section.page4 div.hex-brain {
+	margin: 0px auto 10px;
+	width: 110px;
+	height: 110px;
+	background-size: 110px 110px;
+	background-image: url(img/hex-brain.png);
+}
+
+div.main section.page4 div.hex-tag {
+	margin: 0px auto 10px;
+	width: 110px;
+	height: 110px;
+	background-size: 110px 110px;
+	background-image: url(img/hex-tag.png);
+}
+
+div.main section.page4 .button:hover {
+	color: #FD9453;
+}
+
+div.main section.page4 div.buttons {
+	margin: 0px 0 30px;
+}
+
+div.main section.page5 div.buttons {
+	margin: 30px 0 46px;
+}
+
+div.main section.page5 div.hex-people {
+	margin: 0 auto 20px;
+	width: 180px;
+	height: 180px;
+	background-size: 180px 180px;
+	background-image: url(img/hex-people.png);
+}
+
+div.main section.page5 .button:hover {
+	color: #5B559B;
+}
+
+/* Form */
+
+#contact-form input[type="text"],
+#contact-form textarea {
+	outline: none;
+	border: none;
+	width: 460px;
+	display: block;
+	padding: 8px 0;
+	background: rgba(255,255,255,0.1);
+	text-align: center;
+	margin: 6px auto;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Open Sans';
+}
+
+#contact-form textarea {
+	height: 120px;
+	margin-bottom: 30px;
+}
+
+#contact-form label {
+	display: inline-block;
+	margin-bottom: 14px;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+#contact-form input::-webkit-input-placeholder,
+#contact-form textarea::-webkit-input-placeholder {
+	color: rgba(255,255,255,0.5);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#contact-form input::-moz-placeholder,
+#contact-form textarea::-moz-placeholder {
+	color: rgba(255,255,255,0.5);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#contact-form input:-ms-input-placeholder,
+#contact-form textarea:-ms-input-placeholder {
+	color: rgba(255,255,255,0.5);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#contact-form input:-moz-placeholder,
+#contact-form textarea:-moz-placeholder {
+	color: rgba(255,255,255,0.5);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* Lity */
+
+div.lity-container {
+	overflow: auto;
+}
+
+div.lity-content {
+	color: #fff;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px 20px 70px;
+}
+
+div.lity-content p {
+	padding: 0;
+}
+
+div.lity-content .button:hover {
+	color: #232323;
+}
+
+div.lity-content div.buttons {
+	padding-bottom: 70px;
+}
+
+/* Video Back */
+
+div.video-back {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background: url(img/bucket1.jpg) no-repeat center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 0;
+}
+
+/* Clear */
+
+.clear {
+    clear: both;
+}
