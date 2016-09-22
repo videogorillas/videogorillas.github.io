@@ -175,9 +175,8 @@ div.main section div.section-logo {
 	left: 34px;
 	width: 60px;
 	height: 30px;
-	background-color: #fff;
-	-webkit-mask-image: url(img/vg-logo.svg);
-	mask-image: url(img/vg-logo.svg);
+	background-image: url(img/vg-logo.png);
+	background-size: 60px 30px;
 }
 
 div.main section > img {
@@ -331,6 +330,10 @@ div.main section.page5 .button:hover {
 
 /* Form */
 
+#contact-form {
+	display: none;
+}
+
 #contact-form input[type="text"],
 #contact-form textarea {
 	outline: none;
@@ -424,6 +427,8 @@ div.video-back {
 	-o-background-size: cover;
 	background-size: cover;
 	z-index: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translate3d(0,0,0);
 }
 
 /* Clear */
