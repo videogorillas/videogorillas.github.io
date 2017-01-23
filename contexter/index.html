@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" ng-app="angularRxApp" ng-controller="AppController">
+<head>
+	<meta charset="utf-8">
+	<title>Contexter</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/local.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/Rainbow.js"></script>
+	<script type="text/javascript" src="js/WordFilmstrip.js"></script>
+    <!--<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>-->
+	<script src="js/getJson.js"></script>
+	<script src="js/WordList.js"></script>
+</head>
+<body>
+<div class="row">
+   <div id="page-wrapper">
+   	   <img class="logo" src="css/builtwithvgbrain.svg"></img>
+	   <div class="row">
+			<div class="topSide col-lg-12 videoDiv">
+					<video id="player">
+					</video>
+			</div>
+		</div>
+	   <div class="row">
+	   		<div class="panel panel-primary col-lg-12">
+					  <div class="panel-body frameInfo">
+						loading word labels...
+					  </div>
+			</div>
+	   </div>
+	   <div class="row">
+		   <div class="bottomSide col-lg-12">
+				<div class="words col-lg-2">
+					<div class = "selectedWords">
+					</div>
+					<div class="bs-example">
+					  <ul class="list-group wordList">
+					  </ul>
+				  </div>
+				</div>
+				<div class="wordsFilmstrips col-lg-10">
+					<div class="anchor"></div>
+					<div class="line1"></div>
+					<div class="line2"></div>
+				</div>
+		   </div>
+	   </div>
+   </div>
+</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

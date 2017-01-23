@@ -1,0 +1,138 @@
+.topSide {
+    background: black;
+    height:400px;
+}
+.filmstrip {
+    height:36px;
+}
+.videoDiv {
+    text-align: center;
+}
+#player {
+    height: 100%;
+}
+#page-wrapper {
+    margin-top: 0px;
+    padding-top: 0!important;
+}
+.frameInfo {
+    height: 60px;
+    padding: 0;
+    text-align: center;
+}
+.list-group {
+    background: white;
+}
+li.list-group-item {
+    padding: 7px;
+    padding-left: 0;
+    background: white;
+    border: none;
+    height: 42px;
+}
+
+.panel-primary {
+    background: black;
+    border: none;
+}
+
+.panel {
+    margin-bottom: 0;
+}
+.list-group-item .col-lg-3 {
+    text-align: right;
+}
+
+span.wordlabel {
+    font-size: 12px;
+    font-weight: bolder;
+    background: #E2E2E2;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgba(52, 52, 52, 0.88);
+    margin: 0;
+}
+
+.bottomSide {
+    padding-top: 10px;
+    background: white;
+    height:500px;
+    overflow-x: scroll;
+}
+.currentWord {
+    color: #f8e11c;
+}
+.anchor {
+    position: absolute;
+    height: 100%;
+    border-right: 2px solid #f8e11c;
+}
+body {
+    margin-top: 0px;
+    overflow-y: hidden;
+    background: white;
+}
+
+.row {
+    overflow-y: hidden;
+}
+
+.wordsFilmstrips {
+    padding: 0;
+}
+
+.wordOnFrame {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Roboto' !important;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.wordOnFrame.currentWord {
+    color: #f8e11c;
+}
+
+.videoDiv {
+    overflow: hidden;
+}
+
+.text-success .wordlabel {
+    background: #f8e11c;
+}
+.text-success .col-lg-3 {
+    color: #f8e11c;
+}
+
+.col-lg-12, html, body, .row, .page-wrapper {
+    overflow-x: hidden;
+}
+
+.line1 {
+    box-shadow: 0 -1px 1px 0px black;
+    left: -400px;
+    width: 3000px;
+    height: 1px;
+    background-color: black;
+    top: 79px;
+    position: absolute;
+}
+
+.line2 {
+    box-shadow: 0 1px 1px 0px black;
+    left: -400px;
+    width: 3000px;
+    height: 1px;
+    background-color: black;
+    top: 120px;
+    position: absolute;
+}
+.logo {
+    top: 322px;
+    position: absolute;
+    width: 83px;
+    height: 69px;
+    right: 61px;
+    z-index: 100;
+}
