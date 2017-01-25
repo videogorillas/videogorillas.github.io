@@ -14,7 +14,7 @@ rainbow.setSpectrum('white','grey','black','red');
 
 treshhold = 0.10
 
-movieId = ''
+movieId = '';
 args =  document.location.search.split('=')
 if (args.length > 1){
     movieId = args[1].replace('/','')
@@ -22,8 +22,21 @@ if (args.length > 1){
     alert('no movieId!')
 }
 
+function currentFrame(ffprobe, player) {
+    var frames = ffprobe.streams[0].nb_frames | 0;
+    return (player.currentTime / player.duration * frames) | 0;
+}
+
 if (movieId.length) {
-        var wordlist = new WordList('data/'+movieId+'.json', treshhold, function(){
+
+    var ffprobe = {};
+
+    getJSON('data/'+movieId+'.js', function(_ffprobe) {
+        ffprobe = _ffprobe;
+        console.log(ffprobe);
+    });
+
+    var wordlist = new WordList('data/'+movieId+'.json', treshhold, function(){
         generateRangeWordList()
     });
 
@@ -35,11 +48,11 @@ if (movieId.length) {
 
     player.addEventListener('timeupdate', function() {
         if (wordlist.framesData.length > 0) {
-            var currentFrame = Math.floor((player.currentTime/player.duration)*(wordlist.framesData.length-1));
-            var words = wordlist.getWordsOnFrame(currentFrame);
-            makeFrameWordsView(words, currentFrame);
+            var _currentFrame = currentFrame(ffprobe, player);
+            var words = wordlist.getWordsOnFrame(_currentFrame);
+            makeFrameWordsView(words, _currentFrame);
             highlightCurrentWords(words);
-            updateAnchor(currentFrame);
+            updateAnchor(_currentFrame);
         } else {
             player.currentTime = 0
         }
@@ -118,7 +131,7 @@ if (movieId.length) {
     var generateFilmstripsForWordlist = function(rangeWordList) {
        // wordsFilmstrips.innerHTML = '';
         for (var i=0; i < rangeWordList.length; i++) {
-            var filmstrip = new WordFilmstrip(rangeWordList[i], wordsFilmstrips.getBoundingClientRect().width, player, wordlist.frameCount);
+            var filmstrip = new WordFilmstrip(rangeWordList[i], wordsFilmstrips.getBoundingClientRect().width, player, ffprobe.streams[0].nb_frames);
             wordsFilmstrips.appendChild(filmstrip.el);
         }
     }
@@ -136,7 +149,7 @@ if (movieId.length) {
     };
 
     updateAnchor = function(frame) {
-        anchor.style.left = (frame/wordlist.frameCount) * document.querySelector('canvas').width + 'px'
+        anchor.style.left = (frame/ffprobe.streams[0].nb_frames) * document.querySelector('canvas').width + 'px'
     };
 
     function getPosition(element) {

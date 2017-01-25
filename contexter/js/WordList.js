@@ -78,8 +78,9 @@ WordList.prototype.getMostOftenWords = function(range) {
 
 WordList.prototype.getWordsOnFrame = function(frame) {
     var words = [];
-    for (var i = 0; i < this.wordsByFrame[frame].length; i++) {
-        words.push(this.wordsByFrame[frame][i]);
+    var _wordsByFrame = this.wordsByFrame[frame] || [];
+    for (var i = 0; i < _wordsByFrame.length; i++) {
+        words.push(_wordsByFrame[i]);
     }
     return words
 };
