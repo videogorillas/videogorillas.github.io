@@ -187,7 +187,7 @@ div.main section > img {
 
 /* Section Backgrounds */
 
-.page1.overlay {
+.page-1.overlay {
 	background: url(img/color_bg.svg) no-repeat center center fixed;
 	background-size: cover;
 	position: absolute;
@@ -252,7 +252,7 @@ div.main section.page2 div.hex-gorilla {
 	background-image: url(img/hex-gorilla.png);
 }
 
-div.main section.page1 div.hex-player-play {
+div.main section.page-1 div.hex-player-play {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -261,7 +261,7 @@ div.main section.page1 div.hex-player-play {
 	background-image: url(img/hex-player-play.svg);
 }
 
-div.main section.page1 div.icon-arrow {
+div.main section.page-1 div.icon-arrow {
 	position: relative;
 	width: 50px;
 	height: 160px;
@@ -274,34 +274,93 @@ div.main section.page2 .button:hover {
 	color: #459FC3;
 }
 
-div.main section.page2 {
+div.main section.page-2 {
 	color: #3A5669;
 	background: rgba(240, 241, 242, .5);
 }
 
-div.main section.page2 .icon-player-logo.icon-player-1 {
+div.main section.page-2 .icon-player-logo.icon-player-1 {
 	background: url(img/player_logo.png) no-repeat center;
 }
 
-div.main section.page2 .icon-player-logo.icon-player-2 {
+div.main section.page-2 .icon-player-logo.icon-player-2 {
 	background: url(img/player_logo_vg.png) no-repeat center;
 }
 
-div.main section.page2 ul li {
+div.main section.page-2 ul li {
 	display: flex;
 }
 
-div.main section.page2 .icon-player-logo {
+div.main section.page-2 .icon-player-logo {
 	flex: 1;
 	height: 250px;
 }
 
-div.main section.page2 .icon-player-description {
+div.main section.page-2 .icon-player-description {
 	flex: 3;
 	text-align: left;
 	font-size: 26px;
 	align-self: center;
 	margin: 0 40px;
+}
+
+div.main section.page-3 {
+	color: #3A5669;
+}
+
+
+
+div.main section.page-3 .vg-products {
+	display: flex;
+	flex-direction: row;
+	padding-top: 110px;
+}
+
+div.main section.page-3 .vg-products div {
+	width: 165px;
+	height: 143px;
+	z-index: 0;
+	cursor: pointer;
+}
+
+div.main section.page-3 .vg-products div:hover {
+	z-index: 1;
+}
+
+div.main section.page-3 .vg-products .vg-icon-gorilla-framework {
+	background: url(img/vg_gorilla_framework.svg) no-repeat;
+	transform: translate(110px, -70px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-transcoder {
+	background: url(img/vg_transcoder.svg) no-repeat;
+	transform: translate(75px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-log {
+	background: url(img/vg_log.svg) no-repeat;
+	transform: translate(40px, -70px);
+
+}
+
+div.main section.page-3 .vg-products .vg-icon-subtitle {
+	background: url(img/vg_subtitle.svg) no-repeat;
+	transform: translate(5px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-watermarking {
+	background: url(img/vg_watermarking.svg) no-repeat;
+	transform: translate(-30px, -70px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-brain {
+	background: url(img/vg_brain.svg) no-repeat;
+	transform: translate(-65px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-detector {
+	background: url(img/vg_context_detector.svg) no-repeat;
+	transform: translate(-101px, -70px);
 }
 
 div.main section.page3 div.hex-work {
