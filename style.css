@@ -275,7 +275,33 @@ div.main section.page2 .button:hover {
 }
 
 div.main section.page2 {
-	background: rgba(240,241,242,.5);
+	color: #3A5669;
+	background: rgba(240, 241, 242, .5);
+}
+
+div.main section.page2 .icon-player-logo.icon-player-1 {
+	background: url(img/player_logo.png) no-repeat center;
+}
+
+div.main section.page2 .icon-player-logo.icon-player-2 {
+	background: url(img/player_logo_vg.png) no-repeat center;
+}
+
+div.main section.page2 ul li {
+	display: flex;
+}
+
+div.main section.page2 .icon-player-logo {
+	flex: 1;
+	height: 250px;
+}
+
+div.main section.page2 .icon-player-description {
+	flex: 3;
+	text-align: left;
+	font-size: 26px;
+	align-self: center;
+	margin: 0 40px;
 }
 
 div.main section.page3 div.hex-work {
