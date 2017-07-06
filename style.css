@@ -187,6 +187,16 @@ div.main section > img {
 
 /* Section Backgrounds */
 
+.page1.overlay {
+	background: url(img/color_bg.svg) no-repeat center center fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
 div.main section.page1 {
     background: none;
 }
@@ -242,8 +252,30 @@ div.main section.page2 div.hex-gorilla {
 	background-image: url(img/hex-gorilla.png);
 }
 
+div.main section.page1 div.hex-player-play {
+	margin: 0 auto 20px;
+	width: 180px;
+	height: 180px;
+	background-size: 180px 180px;
+	cursor: pointer;
+	background-image: url(img/hex-player-play.svg);
+}
+
+div.main section.page1 div.icon-arrow {
+	position: relative;
+	width: 50px;
+	height: 160px;
+	top: 50px;
+	margin: auto;
+	background: url(img/arrow.svg) no-repeat;
+}
+
 div.main section.page2 .button:hover {
 	color: #459FC3;
+}
+
+div.main section.page2 {
+	background: rgba(240,241,242,.5);
 }
 
 div.main section.page3 div.hex-work {
