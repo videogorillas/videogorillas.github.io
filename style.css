@@ -315,7 +315,7 @@ div.main section.page-3 .fp-tableCell {
 	top: 20%;
 }
 
-div.main section.page-3 .section-logo-black {
+div.main section.page-3 .section-logo-grey {
 	top: -17%;
 }
 
@@ -567,14 +567,14 @@ div.main section.page-5 .fp-tableCell:after {
 	padding-bottom: 180px;
 }
 
-.section-logo-black {
+.section-logo-grey {
 	position: absolute;
 	z-index: 999;
 	top: 34px;
 	left: 34px;
 	width: 60px;
 	height: 30px;
-	background-image: url(img/vg-logo-black.svg);
+	background-image: url(img/vg-logo-grey.svg);
 	background-size: 60px 30px;
 }
 
