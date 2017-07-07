@@ -472,6 +472,65 @@ div.main section.page4 div.buttons {
 	margin: 0px 0 30px;
 }
 
+div.main section.page-5 table {
+	width: 100%;
+}
+
+div.main section.page-5 table tbody {
+	font-size: 19px;
+}
+
+div.main section.page-5 table tr {
+	height: 70px;
+}
+
+div.main section.page-5 table tr th, td {
+	text-align: left;
+	position: relative;
+}
+
+[class^="circle-"]:before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	left: -20px;
+	top: 30px;
+}
+
+.circle-green:before {
+	background: #008C22;
+}
+
+.circle-red:before {
+	background: #FF0000;
+}
+
+.circle-orange:before {
+	background: #FF7B00;
+}
+
+.circle-grey:before {
+	background: #D1D1D1;
+}
+
+.circle-violet:before {
+	background: #A00CFF;
+}
+
+.circle-turquoise:before {
+	background: #0CFFF9;
+}
+
+div.main section.page-5 table .table-headers {
+	box-shadow: 0px 1px 15px 1px grey;
+}
+
+div.main section.page-5 table .table-headers > th {
+	width: 40px;
+}
+
 div.main section.page5 div.buttons {
 	margin: 30px 0 46px;
 }
