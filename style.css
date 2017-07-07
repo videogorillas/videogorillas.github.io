@@ -315,8 +315,8 @@ div.main section.page-3 .fp-tableCell {
 	top: 20%;
 }
 
-div.main section.page-3 .section-logo {
-	fill: black;
+div.main section.page-3 .section-logo-black {
+	top: -17%;
 }
 
 div.main section.page-3 .plugins-description {
@@ -328,7 +328,7 @@ div.main section.page-3 .vg-products {
 	display: flex;
 	flex-direction: row;
 	left: 50%;
-	padding-top: 200px;
+	padding-top: 190px;
 	transform: translateX(-50%);
 }
 
@@ -476,12 +476,25 @@ div.main section.page-5 {
 	outline: none;
 }
 
+div.main section.page-5 h3 {
+	margin: 0 0 90px;
+}
+
 div.main section.page-5 table {
 	width: 100%;
 }
 
+div.main section.page-5 table thead {
+	font-size: 19px;
+}
+
 div.main section.page-5 table tbody {
 	font-size: 19px;
+}
+
+div.main section.page-5 table tr th, td {
+	text-align: left;
+	position: relative;
 }
 
 div.main section.page-5 table tr {
@@ -490,11 +503,6 @@ div.main section.page-5 table tr {
 
 div.main section.page-5 table .section-label {
 	color: #049CE1;
-}
-
-div.main section.page-5 table tr th, td {
-	text-align: left;
-	position: relative;
 }
 
 [class^="circle-"]:before {
@@ -532,11 +540,42 @@ div.main section.page-5 table tr th, td {
 }
 
 div.main section.page-5 table .table-headers {
-	box-shadow: 0px 1px 15px 1px grey;
+	box-shadow: 0px 1px 30px 1px #E8E8EE;
 }
 
 div.main section.page-5 table .table-headers > th {
 	width: 40px;
+}
+
+div.main section.page-5 .player-page-footer {
+	background: url(img/footer.png) no-repeat center;
+	height: 220px;
+}
+
+div.main section.page-5 .fp-tableCell {
+	display: block;
+	padding-top: 50px;
+}
+
+div.main section.page-5 .fp-tableCell:after {
+	content: '';
+	background: url(img/footer.png) no-repeat center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 70px;
+	padding-bottom: 180px;
+}
+
+.section-logo-black {
+	position: absolute;
+	z-index: 999;
+	top: 34px;
+	left: 34px;
+	width: 60px;
+	height: 30px;
+	background-image: url(img/vg-logo-black.svg);
+	background-size: 60px 30px;
 }
 
 div.main section.page5 div.buttons {
