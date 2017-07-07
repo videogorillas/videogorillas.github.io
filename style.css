@@ -306,25 +306,30 @@ div.main section.page-2 .icon-player-description {
 
 div.main section.page-3 {
 	color: #3A5669;
+	padding-top: 200px !important;
 }
 
+div.main section.page-3 .fp-tableCell {
+	vertical-align: top;
+}
 
+div.main section.page-3 .section-logo {
+	fill: black;
+}
 
 div.main section.page-3 .vg-products {
+	position: absolute;
 	display: flex;
 	flex-direction: row;
-	padding-top: 110px;
+	left: 50%;
+	padding-top: 200px;
+	transform: translateX(-50%);
 }
 
 div.main section.page-3 .vg-products div {
 	width: 165px;
 	height: 143px;
-	z-index: 0;
 	cursor: pointer;
-}
-
-div.main section.page-3 .vg-products div:hover {
-	z-index: 1;
 }
 
 div.main section.page-3 .vg-products .vg-icon-gorilla-framework {
