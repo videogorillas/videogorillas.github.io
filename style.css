@@ -263,9 +263,10 @@ div.main section.page-1 div.hex-player-play {
 
 div.main section.page-1 div.icon-arrow {
 	position: relative;
+	cursor: pointer;
+	top: 15%;
 	width: 50px;
 	height: 160px;
-	top: 50px;
 	margin: auto;
 	background: url(img/arrow.svg) no-repeat;
 }
