@@ -274,8 +274,9 @@ div.main section.page2 .button:hover {
 	color: #459FC3;
 }
 
-div.main section.page-2 {
+div.main section.page-2, div.main section.page-4 {
 	color: #3A5669;
+	outline: none;
 	background: rgba(240, 241, 242, .5);
 }
 
@@ -306,15 +307,19 @@ div.main section.page-2 .icon-player-description {
 
 div.main section.page-3 {
 	color: #3A5669;
-	padding-top: 200px !important;
 }
 
 div.main section.page-3 .fp-tableCell {
-	vertical-align: top;
+	position: absolute;
+	top: 20%;
 }
 
 div.main section.page-3 .section-logo {
 	fill: black;
+}
+
+div.main section.page-3 .plugins-description {
+	font-size: 26px;
 }
 
 div.main section.page-3 .vg-products {
@@ -379,6 +384,34 @@ div.main section.page3 div.hex-work {
 div.main section.page3 .button:hover {
 	color: #6253C1;
 }
+
+div.main section.page-4 .fp-tableCell {
+	vertical-align: top;
+	padding-top: 200px;
+}
+
+div.main section.page-4 .honeycombs-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 400px;
+	height: 440px;
+	background: url(img/honeycombs.png) no-repeat;
+}
+
+div.main section.page-4 .features-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 100px;
+}
+
+div.main section.page-4 .features-list ul {
+	text-align: left;
+	font-size: 26px;
+	line-height: 3rem;
+}
+
 
 div.main section.page4 h3 {
 	margin-bottom: 46px;
