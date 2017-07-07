@@ -472,6 +472,10 @@ div.main section.page4 div.buttons {
 	margin: 0px 0 30px;
 }
 
+div.main section.page-5 {
+	outline: none;
+}
+
 div.main section.page-5 table {
 	width: 100%;
 }
@@ -482,6 +486,10 @@ div.main section.page-5 table tbody {
 
 div.main section.page-5 table tr {
 	height: 70px;
+}
+
+div.main section.page-5 table .section-label {
+	color: #049CE1;
 }
 
 div.main section.page-5 table tr th, td {
