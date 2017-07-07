@@ -306,7 +306,7 @@ div.main section.page-2 .icon-player-description {
 	margin: 0 40px;
 }
 
-div.main section.page-3 {
+div.main section.page-3, div.main section.page-5 {
 	color: #3A5669;
 }
 
@@ -387,13 +387,17 @@ div.main section.page3 .button:hover {
 }
 
 div.main section.page-4 .fp-tableCell {
-	vertical-align: top;
-	padding-top: 200px;
+	position: absolute;
+	top: 20%;
+}
+
+div.main section.page-4 .section-logo {
+	top: -17%;
 }
 
 div.main section.page-4 .honeycombs-img {
 	position: absolute;
-	top: 0;
+	top: -20%;
 	right: 0;
 	width: 400px;
 	height: 440px;
