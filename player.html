@@ -33,7 +33,7 @@
                 <h3>Use everything “out of the box” or create a custom front-end experience leveraging our JavaScript
                     API</h3>
             </div>
-            <a href="#who">
+            <a href="#what">
                 <div class="icon-arrow"></div>
             </a>
             <div id="playerContainer" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
@@ -103,7 +103,70 @@
         <section class="page-5">
             <div class="section-logo-grey"></div>
             <h3>Updated player feature list</h3>
-            <table>
+            <table class="features-preview">
+                <thead>
+                <tr class="table-headers">
+                    <th></th>
+                    <th>Video</th>
+                    <th>.mp4/.mov</th>
+                    <th>Dash</th>
+                    <th>Hls</th>
+                    <th>SuperLive</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Video -->
+                <tr>
+                    <td></td>
+                    <td class="section-label">Video</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Frame-accurate playback</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-orange">Planned</td>
+                    <td class="circle-red">Not Planned</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Fast Forward, playback at 2x, 4x, 8x, 16x speed</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-grey">N/A</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Reverse playback*</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-grey">N/A</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Normal and Full screen display</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                </tr>
+                <tr class="faded-row">
+                    <td></td>
+                    <td>Step forward/reverse by Frame</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-green">Available</td>
+                    <td class="circle-grey">N/A</td>
+                </tr>
+                <tr class="show-more">
+                    <td colspan="6"><a style="color: #049CE1" href="#features-list" data-lity>Show more</a></td>
+                </tr>
+                </tbody>
+            </table>
+            
+            <table id="features-list" class="lity-hide">
                 <thead>
                 <tr class="table-headers">
                     <th></th>
@@ -606,6 +669,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="js/player_main.js"></script>
 </body>
 </html>

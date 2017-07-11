@@ -539,8 +539,22 @@ div.main section.page-5 table .section-label {
 	background: #0CFFF9;
 }
 
-div.main section.page-5 table .table-headers {
+div.main section.page-5 table .faded-row {
+    background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.1) 20%, rgba(232,232,238, 0.3) 100%);
+    background: -o-linear-gradient(to bottom, rgba(255,255,255,0.1) 20%, rgba(232,232,238, 0.3) 100%);
+    background: -moz-linear-gradient(to bottom, rgba(255,255,255,0.1) 20%, rgba(232,232,238, 0.3) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 20%, rgba(232,232,238, 0.3) 100%);
+}
+
+div.main section.page-5 table .table-headers, .show-more > td {
+	-webkit-box-shadow: 0px 1px 30px 1px #E8E8EE;
+	-moz-box-shadow: 0px 1px 30px 1px #E8E8EE;
 	box-shadow: 0px 1px 30px 1px #E8E8EE;
+}
+
+div.main section.page-5 table .show-more > td {
+	text-align: center;
+	color: #049CE1;
 }
 
 div.main section.page-5 table .table-headers > th {
