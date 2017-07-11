@@ -477,8 +477,13 @@ div.main section.page-5 {
 	outline: none;
 }
 
+div.main section.page-5 .fp-tableCell {
+	display: flex;
+	flex-direction: column;
+}
+
 div.main section.page-5 h3 {
-	margin: 0 0 90px;
+	margin: 60px 0 60px 90px;
 }
 
 div.main section.page-5 table {
@@ -568,15 +573,11 @@ div.main section.page-5 table .table-headers > th {
 	width: 40px;
 }
 
-div.main section.page-5 .player-page-footer {
-	background: url(img/footer.png) no-repeat center;
-	height: 220px;
-}
-
 div.main section.page-5 .footer-image {
 	width: 100%;
+	align-self: flex-end;
 	cursor: pointer;
-	margin: 10px;
+	margin-top: auto;
 }
 
 div.main section.page-5 .footer-image img {
