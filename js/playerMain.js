@@ -56,7 +56,15 @@ $(document).ready(function() {
     $('.hex-player-play').click(function () {
         $('.page-1.overlay, .page-container, .icon-arrow').fadeOut(1000);
         elements.player.play();
-    })
+    });
+
+    $('.player-features-list').on('mouseover', function (e) {
+        $.fn.fullpage.setAllowScrolling(false);
+    });
+    
+    $('.player-features-list').on('mouseleave', function (e) {
+        $.fn.fullpage.setAllowScrolling(true);
+    });
 });
 
 // Contact Form 
