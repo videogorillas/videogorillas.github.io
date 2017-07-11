@@ -2,6 +2,12 @@
 	div.main section .page-container {
 		max-width: 600px;
 	}
+	div.main section.page-1 h3 {
+		font-size: 25px;
+	}
+	div.main section.page-4 .features-list {
+		padding: 0;
+	}
 	div.main section.page4 div.column {
 		width: 260px;
 	}
@@ -17,15 +23,16 @@
 	div.main section .page-container {
 		max-width: 500px;
 	}
+	div.main section.page-2 .icon-player-description {
+		flex: 2;
+		font-size: 24px;
+	}
 	div.main section.page4 div.column {
 		width: 210px;
 	}
 	div.main section {
 		outline: 0px solid #fff;
 		outline-offset: 0px;
-	}
-	div.main section div.section-logo {
-		background-color: #fff !important;
 	}
 	#contact-form input[type="text"], #contact-form textarea {
 		width: 300px;
