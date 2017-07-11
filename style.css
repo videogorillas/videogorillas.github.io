@@ -505,6 +505,12 @@ div.main section.page-5 table .section-label {
 	color: #049CE1;
 }
 
+div.main section.page-5 .player-features-list {
+	height: 60%;
+	overflow-y: scroll;
+	padding-top: 15px;
+}
+
 [class^="circle-"]:before {
 	content: '';
 	width: 10px;
