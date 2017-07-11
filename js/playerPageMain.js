@@ -65,6 +65,14 @@ $(document).ready(function() {
     $('.player-features-list').on('mouseleave', function (e) {
         $.fn.fullpage.setAllowScrolling(true);
     });
+    
+    $('.section-logo, .section-logo-grey, .footer-image').click(function () {
+        window.location.assign('/');
+    });
+    
+    $('.vg-icon-gorilla-framework').click(function () {
+        window.location.assign('#player');
+    })
 });
 
 // Contact Form 

@@ -175,6 +175,7 @@ div.main section div.section-logo {
 	left: 34px;
 	width: 60px;
 	height: 30px;
+	cursor: pointer;
 	background-image: url(img/vg-logo.png);
 	background-size: 60px 30px;
 }
@@ -572,20 +573,17 @@ div.main section.page-5 .player-page-footer {
 	height: 220px;
 }
 
-div.main section.page-5 .fp-tableCell {
-	display: block;
-	padding-top: 50px;
+div.main section.page-5 .footer-image {
+	width: 100%;
+	cursor: pointer;
+	margin: 10px;
 }
 
-div.main section.page-5 .fp-tableCell:after {
-	content: '';
-	background: url(img/footer.png) no-repeat center;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 70px;
-	padding-bottom: 180px;
-}
+div.main section.page-5 .footer-image img {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+} 
 
 .section-logo-grey {
 	position: absolute;
@@ -594,6 +592,7 @@ div.main section.page-5 .fp-tableCell:after {
 	left: 34px;
 	width: 60px;
 	height: 30px;
+	cursor: pointer;
 	background-image: url(img/vg-logo-grey.svg);
 	background-size: 60px 30px;
 }
