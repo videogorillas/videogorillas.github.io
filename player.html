@@ -584,10 +584,38 @@
             var timeline = elements.player.getTimeline();
             elements.player.seek(2477);
             console.log("everything loaded " + timeline);
+            loadSubs();
         } else {
             console.error(loadResponse);
         }
     });
+    var loadSubs = function () {
+        var offset = "0";
+        var player = elements.player;
+        var timeline = player.getTimeline();
+
+        var urls = ['http://kote.videogorillas.com/vmir/spa.stl',
+            'http://kote.videogorillas.com/vmir/eng.stl',
+            'http://kote.videogorillas.com/vmir/pete_rus.srt',
+            'http://kote.videogorillas.com/vmir/ger.stl'
+        ];
+
+        urls.forEach(function (url) {
+            var codec = VG.Captions.guessSubtitleCodec(url);
+            VG.Captions.parseSubs(timeline, url, codec, function (err, subs) {
+                if (!err) {
+                    if (!!offset && !isNaN(offset)) {
+                        VG.Captions.offsetCaptions(subs, parseInt(offset), timeline);
+                        console.log("Subs are offset by " + offset, subs);
+                    }
+                    subs.title = "Captions " + (elements.player.getCaptionsList().length + 1);
+                    player.addCaptions(subs);
+                } else {
+                    console.error("Error parsing subs", err);
+                }
+            });
+        })
+    };
 </script>
 <script>
     (function (i, s, o, g, r, a, m) {
