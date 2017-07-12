@@ -613,7 +613,6 @@
         })
     };
     var loadAudio = function () {
-        var offset = "0";
         var player = elements.player;
         var urls = ["http://kote.videogorillas.com/vmir/eng51_3min.m4a",
             "http://kote.videogorillas.com/vmir/rus20_4min.m4a"
@@ -622,11 +621,7 @@
         urls.forEach(function (url) {
             player.loadAudioTrack(url, "Track " + (urls.indexOf(url) + 1), function (err) {
                 if (!err) {
-                    if (!!offset && !isNaN(offset)) {
-                        player.conformAudioTrack(url, parseFloat(offset));
-                    } else {
-                        console.error(offset + " is NaN");
-                    }
+                    console.log("audio loaded")
                 } else {
                     console.error("failed to load audio", err);
                 }
