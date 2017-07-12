@@ -591,7 +591,6 @@
         }
     });
     var loadSubs = function () {
-        var offset = "0";
         var player = elements.player;
         var timeline = player.getTimeline();
 
@@ -605,10 +604,6 @@
             var codec = VG.Captions.guessSubtitleCodec(url);
             VG.Captions.parseSubs(timeline, url, codec, function (err, subs) {
                 if (!err) {
-                    if (!!offset && !isNaN(offset)) {
-                        VG.Captions.offsetCaptions(subs, parseInt(offset), timeline);
-                        console.log("Subs are offset by " + offset, subs);
-                    }
                     subs.title = "Captions " + (elements.player.getCaptionsList().length + 1);
                     player.addCaptions(subs);
                 } else {
