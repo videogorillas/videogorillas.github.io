@@ -175,6 +175,7 @@ div.main section div.section-logo {
 	left: 34px;
 	width: 60px;
 	height: 30px;
+	cursor: pointer;
 	background-image: url(img/vg-logo.png);
 	background-size: 60px 30px;
 }
@@ -186,6 +187,16 @@ div.main section > img {
 }
 
 /* Section Backgrounds */
+
+.page-1.overlay {
+	background: url(img/color_bg.svg) no-repeat center center fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
 
 div.main section.page1 {
     background: none;
@@ -242,8 +253,126 @@ div.main section.page2 div.hex-gorilla {
 	background-image: url(img/hex-gorilla.png);
 }
 
+div.main section.page-1 div.hex-player-play {
+	margin: 0 auto 20px;
+	width: 180px;
+	height: 180px;
+	background-size: 180px 180px;
+	cursor: pointer;
+	background-image: url(img/hex-player-play.svg);
+}
+
+div.main section.page-1 div.icon-arrow {
+	position: relative;
+	cursor: pointer;
+	top: 15%;
+	width: 50px;
+	height: 160px;
+	margin: auto;
+	background: url(img/arrow.svg) no-repeat;
+}
+
 div.main section.page2 .button:hover {
 	color: #459FC3;
+}
+
+div.main section.page-2, div.main section.page-4 {
+	color: #3A5669;
+	outline: none;
+	background: rgba(240, 241, 242, .5);
+}
+
+div.main section.page-2 .icon-player-logo.icon-player-1 {
+	background: url(img/player_logo.png) no-repeat center;
+}
+
+div.main section.page-2 .icon-player-logo.icon-player-2 {
+	background: url(img/player_logo_vg.png) no-repeat center;
+}
+
+div.main section.page-2 ul li {
+	display: flex;
+}
+
+div.main section.page-2 .icon-player-logo {
+	flex: 1;
+	height: 250px;
+}
+
+div.main section.page-2 .icon-player-description {
+	flex: 3;
+	text-align: left;
+	font-size: 26px;
+	align-self: center;
+	margin: 0 40px;
+}
+
+div.main section.page-3, div.main section.page-5 {
+	color: #3A5669;
+}
+
+div.main section.page-3 .fp-tableCell {
+	position: absolute;
+	top: 20%;
+}
+
+div.main section.page-3 .section-logo-grey {
+	top: -17%;
+}
+
+div.main section.page-3 .plugins-description {
+	font-size: 26px;
+}
+
+div.main section.page-3 .vg-products {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	left: 50%;
+	padding-top: 190px;
+	transform: translateX(-50%);
+}
+
+div.main section.page-3 .vg-products div {
+	width: 165px;
+	height: 143px;
+	cursor: pointer;
+}
+
+div.main section.page-3 .vg-products .vg-icon-gorilla-framework {
+	background: url(img/vg_gorilla_framework.svg) no-repeat;
+	transform: translate(110px, -70px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-transcoder {
+	background: url(img/vg_transcoder.svg) no-repeat;
+	transform: translate(75px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-log {
+	background: url(img/vg_log.svg) no-repeat;
+	transform: translate(40px, -70px);
+
+}
+
+div.main section.page-3 .vg-products .vg-icon-subtitle {
+	background: url(img/vg_subtitle.svg) no-repeat;
+	transform: translate(5px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-watermarking {
+	background: url(img/vg_watermarking.svg) no-repeat;
+	transform: translate(-30px, -70px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-brain {
+	background: url(img/vg_brain.svg) no-repeat;
+	transform: translate(-65px);
+}
+
+div.main section.page-3 .vg-products .vg-icon-detector {
+	background: url(img/vg_context_detector.svg) no-repeat;
+	transform: translate(-101px, -70px);
 }
 
 div.main section.page3 div.hex-work {
@@ -257,6 +386,38 @@ div.main section.page3 div.hex-work {
 div.main section.page3 .button:hover {
 	color: #6253C1;
 }
+
+div.main section.page-4 .fp-tableCell {
+	position: absolute;
+	top: 20%;
+}
+
+div.main section.page-4 .section-logo {
+	top: -17%;
+}
+
+div.main section.page-4 .honeycombs-img {
+	position: absolute;
+	top: -20%;
+	right: 0;
+	width: 400px;
+	height: 440px;
+	background: url(img/honeycombs.png) no-repeat;
+}
+
+div.main section.page-4 .features-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 100px;
+}
+
+div.main section.page-4 .features-list ul {
+	text-align: left;
+	font-size: 26px;
+	line-height: 3rem;
+}
+
 
 div.main section.page4 h3 {
 	margin-bottom: 46px;
@@ -310,6 +471,131 @@ div.main section.page4 .button:hover {
 
 div.main section.page4 div.buttons {
 	margin: 0px 0 30px;
+}
+
+div.main section.page-5 {
+	outline: none;
+}
+
+div.main section.page-5 .fp-tableCell {
+	display: flex;
+	flex-direction: column;
+}
+
+div.main section.page-5 h3 {
+	margin: 60px 0 60px 90px;
+}
+
+div.main section.page-5 table {
+	width: 100%;
+}
+
+div.main section.page-5 table thead {
+	font-size: 19px;
+}
+
+div.main section.page-5 table tbody {
+	font-size: 19px;
+}
+
+div.main section.page-5 table tr th, td {
+	text-align: left;
+	position: relative;
+}
+
+div.main section.page-5 table tr {
+	height: 70px;
+}
+
+div.main section.page-5 table .section-label {
+	color: #049CE1;
+}
+
+div.main section.page-5 .player-features-list {
+	height: 60%;
+	overflow-y: scroll;
+	padding-top: 15px;
+}
+
+[class^="circle-"]:before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	left: -20px;
+	top: 30px;
+}
+
+.circle-green:before {
+	background: #008C22;
+}
+
+.circle-red:before {
+	background: #FF0000;
+}
+
+.circle-orange:before {
+	background: #FF7B00;
+}
+
+.circle-grey:before {
+	background: #D1D1D1;
+}
+
+.circle-violet:before {
+	background: #A00CFF;
+}
+
+.circle-turquoise:before {
+	background: #0CFFF9;
+}
+
+div.main section.page-5 table .faded-row {
+    background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.1) 20%, rgba(232,232,238, 0.3) 100%);
+    background: -o-linear-gradient(to bottom, rgba(255,255,255,0.1) 20%, rgba(232,232,238, 0.3) 100%);
+    background: -moz-linear-gradient(to bottom, rgba(255,255,255,0.1) 20%, rgba(232,232,238, 0.3) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 20%, rgba(232,232,238, 0.3) 100%);
+}
+
+div.main section.page-5 table .table-headers, .show-more > td {
+	-webkit-box-shadow: 0px 1px 30px 1px #E8E8EE;
+	-moz-box-shadow: 0px 1px 30px 1px #E8E8EE;
+	box-shadow: 0px 1px 30px 1px #E8E8EE;
+}
+
+div.main section.page-5 table .show-more > td {
+	text-align: center;
+	color: #049CE1;
+}
+
+div.main section.page-5 table .table-headers > th {
+	width: 40px;
+}
+
+div.main section.page-5 .footer-image {
+	width: 100%;
+	align-self: flex-end;
+	cursor: pointer;
+	margin-top: auto;
+}
+
+div.main section.page-5 .footer-image img {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+} 
+
+.section-logo-grey {
+	position: absolute;
+	z-index: 999;
+	top: 34px;
+	left: 34px;
+	width: 60px;
+	height: 30px;
+	cursor: pointer;
+	background-image: url(img/vg-logo-grey.svg);
+	background-size: 60px 30px;
 }
 
 div.main section.page5 div.buttons {
