@@ -101,6 +101,21 @@
 	div.main section div.icon-arrow {
 		height: 100px !important;
 	}
+	div.main section.page-1 div.hex-player-play {
+		height: 150px;
+		background-size: contain;
+		cursor: pointer;
+		background: url(../img/hex-player-play.png) no-repeat center;
+	}
+	div.main section.page-1 div.page-container {
+		margin: 140px 0 30px;
+	}
+	div.main section.page-1 div.page-container h1 {
+		font-size: 24px;
+	}
+	div.main section.page-1 div.page-container h3 {
+		font-size: 20px;
+	}
 	div.main section.page-2 ul {
 		padding-left: 10px;
 	}
@@ -161,12 +176,6 @@
 		height: 5px;
 		left: -7px;
 		top: 20px;
-	}
-	div.main section.page-1 div.hex-player-play {
-		height: 150px;
-		background-size: contain;
-		cursor: pointer;
-		background: url(../img/hex-player-play.png) no-repeat center;
 	}
 	#fp-nav {
 	   display: none;
