@@ -50,15 +50,6 @@ $(document).ready(function() {
     });
 });
 
-// Player
-
-$(document).ready(function() {
-    $('.hex-player-play').click(function () {
-        $('.page-1.overlay, .page-container, .icon-arrow').fadeOut(1000);
-        elements.player.play();
-    })
-});
-
 // Contact Form 
 
 $(document).ready(function() {

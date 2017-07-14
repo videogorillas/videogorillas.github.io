@@ -266,10 +266,10 @@ div.main section.page-1 div.icon-arrow {
 	position: relative;
 	cursor: pointer;
 	top: 15%;
-	width: 50px;
 	height: 160px;
 	margin: auto;
-	background: url(img/arrow.svg) no-repeat;
+	background: url(img/arrow.svg) no-repeat center;
+	background-size: contain;
 }
 
 div.main section.page2 .button:hover {
@@ -284,10 +284,12 @@ div.main section.page-2, div.main section.page-4 {
 
 div.main section.page-2 .icon-player-logo.icon-player-1 {
 	background: url(img/player_logo.png) no-repeat center;
+	background-size: contain;
 }
 
 div.main section.page-2 .icon-player-logo.icon-player-2 {
 	background: url(img/player_logo_vg.png) no-repeat center;
+	background-size: contain;
 }
 
 div.main section.page-2 ul li {
@@ -513,7 +515,6 @@ div.main section.page-5 table .section-label {
 
 div.main section.page-5 .player-features-list {
 	height: 60%;
-	overflow-y: scroll;
 	padding-top: 15px;
 }
 
@@ -523,8 +524,9 @@ div.main section.page-5 .player-features-list {
 	height: 10px;
 	border-radius: 50%;
 	position: absolute;
-	left: -20px;
-	top: 30px;
+	left: -15px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .circle-green:before {
@@ -567,10 +569,6 @@ div.main section.page-5 table .table-headers, .show-more > td {
 div.main section.page-5 table .show-more > td {
 	text-align: center;
 	color: #049CE1;
-}
-
-div.main section.page-5 table .table-headers > th {
-	width: 40px;
 }
 
 div.main section.page-5 .footer-image {
@@ -721,4 +719,31 @@ div.video-back {
 
 .clear {
     clear: both;
+}
+
+table {
+	display: -moz-groupbox;
+}
+
+tbody {
+	overflow-y: scroll;
+	height: 58%;
+	width: 100%;
+	position: absolute;
+}
+thead tr :first-child {
+	padding-left: 30px;
+}
+
+tbody tr :first-child {
+	padding: 0 20px 0 30px;
+}
+tbody tr td {
+	padding-left: 5px;
+}
+
+tr {
+	width: 100%;
+	display: inline-table;
+	table-layout: fixed;
 }
