@@ -541,7 +541,7 @@
         };
         elements.player = new VG.Player(pCont, pConfig);
     }
-    elements.player.loadUrl("video/car_damage_detection/file.mpd", function (loadResponse) {
+    elements.player.loadUrl("http://kote.videogorillas.com/vmir/car_damage_detection/file.mpd", function (loadResponse) {
         console.log("loaded", elements.player);
         if (!loadResponse) {
             var timeline = elements.player.getTimeline();
