@@ -136,14 +136,18 @@
 		font-size: 10px;
 		height: 45px;
 	}
-	div.main section.page-5 table .table-headers > th {
-		width: 10px;
+	div.main section.page-5 table thead tr :first-child {
+		padding-left: 20px;
+	}
+	div.main section.page-5 table tbody tr :first-child {
+		padding: 0 20px 0 20px;
 	}
 	div.main section.page-5 [class^="circle-"]:before {
 		width: 5px;
 		height: 5px;
-		left: -7px;
-		top: 20px;
+		left: -3px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 	div.main section.page-5 .footer-image {
 		display: none;
@@ -258,14 +262,18 @@
 		font-size: 10px;
 		height: 45px;
 	}
-	div.main section.page-5 table .table-headers > th {
-		width: 10px;
+	div.main section.page-5 table thead tr :first-child {
+		padding-left: 20px;
+	}
+	div.main section.page-5 table tbody tr :first-child {
+		padding: 0 20px 0 20px;
 	}
 	div.main section.page-5 [class^="circle-"]:before {
 		width: 5px;
 		height: 5px;
-		left: -7px;
-		top: 20px;
+		left: -3px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 	#fp-nav {
 	   display: none;
