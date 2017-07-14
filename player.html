@@ -548,6 +548,12 @@
             console.log("everything loaded " + timeline);
             loadSubs();
             loadAudio();
+            $('.vg_addon.vg_addon__list.vg_default-bg.vg_audiolist').on('mouseover', function (e) {
+                $.fn.fullpage.setAllowScrolling(false);
+            });
+            $('.vg_addon.vg_addon__list.vg_default-bg.vg_audiolist').on('mouseleave', function (e) {
+                $.fn.fullpage.setAllowScrolling(true);
+            })
         } else {
             console.error(loadResponse);
         }

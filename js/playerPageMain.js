@@ -65,16 +65,6 @@ $(document).ready(function() {
     $('.player-features-list').on('mouseleave', function (e) {
         $.fn.fullpage.setAllowScrolling(true);
     });
-
-    setTimeout(function () {
-            $('.vg_addon.vg_addon__list.vg_default-bg.vg_audiolist').on('mouseover', function (e) {
-                $.fn.fullpage.setAllowScrolling(false);
-            });
-            $('.vg_addon.vg_addon__list.vg_default-bg.vg_audiolist').on('mouseleave', function (e) {
-                $.fn.fullpage.setAllowScrolling(true);
-            })
-        }, 3000
-    );
     
     $('.section-logo, .section-logo-grey, .footer-image').click(function () {
         window.location.assign('/');
