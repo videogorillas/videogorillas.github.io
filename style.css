@@ -336,6 +336,43 @@ div.main section.page-3 .vg-products {
 }
 
 div.main section.page-3 .vg-products div {
+	position: relative;
+	display: inline-block;
+}
+
+div.main section.page-3 .vg-products span {
+	visibility: hidden;
+	width: auto;
+	padding: 5px 10px;
+	font-size: 15px;
+	position: absolute;
+	top: 5%;
+	transform: translate(-50%);
+	background-color: rgb(0,0,0);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	opacity: 0;
+	transition: opacity 1.3s;
+}
+
+div.main section.page-3 .vg-products div span::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+div.main section.page-3 .vg-products div:hover span {
+	visibility: visible;
+	opacity: 1;
+}
+
+div.main section.page-3 .vg-products div {
 	width: 165px;
 	height: 143px;
 	cursor: pointer;
@@ -485,7 +522,7 @@ div.main section.page-5 .fp-tableCell {
 }
 
 div.main section.page-5 h3 {
-	margin: 60px 0 60px 90px;
+	margin: 60px 0 50px 90px;
 }
 
 div.main section.page-5 table {
@@ -515,7 +552,6 @@ div.main section.page-5 table .section-label {
 
 div.main section.page-5 .player-features-list {
 	height: 60%;
-	padding-top: 15px;
 }
 
 [class^="circle-"]:before {
@@ -573,14 +609,19 @@ div.main section.page-5 table .show-more > td {
 
 div.main section.page-5 .footer-image {
 	width: 100%;
+	height: calc(40% - 150px);
+	position: relative;
 	align-self: flex-end;
 	cursor: pointer;
 	margin-top: auto;
 }
 
 div.main section.page-5 .footer-image img {
-	height: auto;
-	width: auto;
+	position: absolute;
+	height: 60%;
+	left: 50%;
+	bottom: 10px;
+	transform: translateX(-50%);
 	max-width: 100%;
 } 
 
