@@ -254,7 +254,7 @@ div.main section.page2 div.hex-gorilla {
 }
 
 div.main section.page-1 div.hex-player-play {
-	margin: 0 auto 20px;
+	margin: 0 auto 10px;
 	width: 180px;
 	height: 180px;
 	background-size: 180px 180px;
@@ -262,14 +262,24 @@ div.main section.page-1 div.hex-player-play {
 	background-image: url(img/hex-player-play.svg);
 }
 
-div.main section.page-1 div.icon-arrow {
-	position: relative;
+div.main section.page-1 div.play-button-label {
+	font-size: 20px;
+	margin-bottom: 20px;
 	cursor: pointer;
-	top: 15%;
-	height: 160px;
-	margin: auto;
-	background: url(img/arrow.svg) no-repeat center;
-	background-size: contain;
+}
+
+div.main section.page-1 div.hex-player-play:hover {
+	transition: all .5s ease-in-out;
+	transform: scale(1.15);
+}
+
+div.main section.page-1 div.learn-more {
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 div.main section.page2 .button:hover {

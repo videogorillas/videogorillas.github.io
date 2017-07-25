@@ -20,6 +20,12 @@
 	div.main section .page-container {
 		max-width: 500px;
 	}
+	div.main section.page-1 div.play-button-label {
+		font-size: 15px;
+	}
+	div.main section.page-1 div.learn-more {
+		font-size: 15px;
+	}
 	div.main section.page-2 .icon-player-description {
 		flex: 2;
 		font-size: 24px;
@@ -66,15 +72,15 @@
 	div.main section.page-1 h3 {
 		font-size: 17px;
 	}
-	div.main section.page-1 .icon-arrow {
-		height: 65px !important;
-	}
 	div.main section.page-1 .hex.hex-player-play {
 		margin: 0 auto;
 		width: 100px;
 		height: 100px;
 		background: url(../img/hex-player-play.svg) no-repeat center;
 		background-size: contain;
+	}
+	div.main section.page-1 div.learn-more {
+		bottom: 90px;
 	}
 	div.main section.page-2 h3 {
 		font-size: 25px;
@@ -191,15 +197,13 @@
 		left: 20px;
 		top: 20px;
 	}
-
-	div.main section div.icon-arrow {
-		height: 100px !important;
-	}
 	div.main section.page-1 div.hex-player-play {
 		height: 150px;
 		background-size: contain;
 		cursor: pointer;
 		background: url(../img/hex-player-play.png) no-repeat center;
+		background-size: 110px 100px;
+		margin-bottom: 0;
 	}
 	div.main section.page-1 div.page-container {
 		margin: 140px 0 30px;
