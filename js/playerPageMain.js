@@ -53,8 +53,8 @@ $(document).ready(function() {
 // Player
 
 $(document).ready(function() {
-    $('.hex-player-play').click(function () {
-        $('.page-1.overlay, .page-container, .icon-arrow').fadeOut(1000);
+    $('.hex-player-play, .play-button-label').click(function () {
+        $('.page-1.overlay, .page-container, .learn-more, .play-button-label').fadeOut(1000);
         elements.player.play();
     });
 
