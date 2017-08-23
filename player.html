@@ -527,6 +527,10 @@
 <script>
     var elements = {};
     var pCont = document.querySelector("#playerContainer");
+    var url = "http://kote.videogorillas.com/vmir/car_damage_detection/mpd/file.mpd";
+    if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+        url = "http://kote.videogorillas.com/vmir/car_damage_detection/mp4/AugmentedReality.mp4";
+    }
 
     if (elements.player == undefined) {
         var pConfig = {
@@ -539,7 +543,7 @@
         };
         elements.player = new VG.Player(pCont, pConfig);
     }
-    elements.player.loadUrl("http://kote.videogorillas.com/vmir/car_damage_detection/file.mpd", function (loadResponse) {
+    elements.player.loadUrl(url, function (loadResponse) {
         console.log("loaded", elements.player);
         if (!loadResponse) {
             var timeline = elements.player.getTimeline();
@@ -560,11 +564,7 @@
         var player = elements.player;
         var timeline = player.getTimeline();
 
-        var urls = ['http://kote.videogorillas.com/vmir/spa.stl',
-            'http://kote.videogorillas.com/vmir/eng.stl',
-            'http://kote.videogorillas.com/vmir/pete_rus.srt',
-            'http://kote.videogorillas.com/vmir/ger.stl'
-        ];
+        var urls = ['http://kote.videogorillas.com/vmir/car-inspection.xml'];
 
         urls.forEach(function (url) {
             var codec = VG.Captions.guessSubtitleCodec(url);
