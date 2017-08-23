@@ -527,9 +527,9 @@
 <script>
     var elements = {};
     var pCont = document.querySelector("#playerContainer");
-    var url = "http://kote.videogorillas.com/vmir/car_damage_detection/mpd/file.mpd";
+    var videoUrl = "http://kote.videogorillas.com/vmir/car_damage_detection/mpd/file.mpd";
     if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-        url = "http://kote.videogorillas.com/vmir/car_damage_detection/mp4/AugmentedReality.mp4";
+        videoUrl = "http://kote.videogorillas.com/vmir/car_damage_detection/mp4/AugmentedReality.mp4";
     }
 
     if (elements.player == undefined) {
@@ -543,7 +543,7 @@
         };
         elements.player = new VG.Player(pCont, pConfig);
     }
-    elements.player.loadUrl(url, function (loadResponse) {
+    elements.player.loadUrl(videoUrl, function (loadResponse) {
         console.log("loaded", elements.player);
         if (!loadResponse) {
             var timeline = elements.player.getTimeline();
