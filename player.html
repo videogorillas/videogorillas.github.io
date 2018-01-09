@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="vgplayer/vgplayer.min.css">
     <script type="text/javascript" src="vgplayer/vgplayer.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
@@ -528,9 +528,9 @@
 <script>
     var elements = {};
     var pCont = document.querySelector("#playerContainer");
-    var videoUrl = "kote.videogorillas.com/vmir/car_damage_detection/mpd/file.mpd";
+    var videoUrl = "//kote.videogorillas.com/vmir/car_damage_detection/mpd/file.mpd";
     if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-        videoUrl = "kote.videogorillas.com/vmir/car_damage_detection/mp4/AugmentedReality.mp4";
+        videoUrl = "//kote.videogorillas.com/vmir/car_damage_detection/mp4/AugmentedReality.mp4";
     }
 
     if (elements.player == undefined) {
@@ -565,7 +565,7 @@
         var player = elements.player;
         var timeline = player.getTimeline();
 
-        var urls = ['kote.videogorillas.com/vmir/car-inspection.xml'];
+        var urls = ['//kote.videogorillas.com/vmir/car-inspection.xml'];
 
         urls.forEach(function (url) {
             var codec = VG.Captions.guessSubtitleCodec(url);
@@ -581,8 +581,8 @@
     };
     var loadAudio = function () {
         var player = elements.player;
-        var urls = ['kote.videogorillas.com/vmir/about_that_oldie.m4a',
-            'kote.videogorillas.com/vmir/the_chase.m4a'
+        var urls = ['//kote.videogorillas.com/vmir/about_that_oldie.m4a',
+            '//kote.videogorillas.com/vmir/the_chase.m4a'
         ];
 
         urls.forEach(function (url) {
@@ -613,7 +613,7 @@
     ga('send', 'pageview');
 
 </script>
-<script src="ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/playerPageMain.js"></script>
