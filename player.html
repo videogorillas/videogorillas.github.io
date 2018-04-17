@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="vgplayer/vgplayer.min.css">
     <script type="text/javascript" src="vgplayer/vgplayer.js"></script>
+    <script type="text/javascript" src="vgplayer/timecodeocr.js"></script>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
@@ -20,6 +21,13 @@
     <meta name="msapplication-config" content="icons/browserconfig.xml">
     <meta name="theme-color" content="#ff0000">
     <meta name="keywords" content="professional video player, post production, web video player, frame by frame video playback, frame precise player, frame accurate player, html5 video player">
+
+<style>
+    .vg_frozen_container{
+        display: none;
+    }
+</style>
+
 </head>
 <body id="home2">
 <div class="wrapper">
@@ -528,9 +536,9 @@
 <script>
     var elements = {};
     var pCont = document.querySelector("#playerContainer");
-    var videoUrl = "//kote.videogorillas.com/vmir/car_damage_detection/mpd/file.mpd";
+    var videoUrl = "//kote.videogorillas.com/vmir/car_damage_detection/TC_mpd/file.mpd";
     if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-        videoUrl = "//kote.videogorillas.com/vmir/car_damage_detection/mp4/AugmentedReality.mp4";
+        videoUrl = "//document.createComment(\"comm\")kote.videogorillas.com/vmir/car_damage_detection/TC_AugmentedReality.mp4";
     }
 
     if (elements.player == undefined) {
@@ -555,7 +563,50 @@
             });
             $('.vg_addon.vg_addon__list.vg_default-bg.vg_audiolist').on('mouseleave', function (e) {
                 $.fn.fullpage.setAllowScrolling(true);
-            })
+            });
+
+            let ocr = TimecodeOCRPlugin.init(elements.player.player, "newocr.tf/model.json");
+            let ocrView = new TimecodeOCRView(elements.player.player);
+            window.ocr = ocr;
+            window.ocrView = ocrView;
+            window.doOCR = ()=>{
+            }
+
+            setTimeout(()=>{
+                ocrView.initView();
+            }, 2000);
+
+            elements.player.player.addEventListener("play", (p)=>{
+                if (!ocrView.finder){
+                    return;
+                }
+
+                if (p){
+                    ocrView.finder.style.display="none";
+                } else {
+                    setTimeout(()=>{
+                        ocr.detectCurrentFrame(tc_and_bbox => {
+                            ocrView.finder.style.display="block";
+                            let tc = tc_and_bbox[0];
+                            let box = tc_and_bbox[1];
+                            console.log(tc);
+                            ocrView.finder.innerText = "OCR timecode: " + tc;
+                            if (box){
+                                TimecodeOCRView.placeFinderBBox(box, ocrView.finder);
+                            }
+                        });
+                    }, 42);
+                }
+            });
+
+            elements.player.player.addEventListener("timeupdate", (t)=>{
+                if(!elements.player.player.isPlaying() && ocrView.finder){
+                    ocrView.finder.style.display="none";
+                }
+            });
+
+
+
         } else {
             console.error(loadResponse);
         }
