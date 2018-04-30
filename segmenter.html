@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>VG Object Segmentation Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/lity.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="vgplayer/vgplayer.min.css">
+    <script type="text/javascript" src="vgplayer/vgplayer.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="icons/manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#ff4664">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ff0000">
+    <meta name="keywords"
+          content="professional video player, post production, web video player, frame by frame video playback, frame precise player, frame accurate player, html5 video player">
+
+    <style>
+        .vg_frozen_container {
+            display: none;
+        }
+    </style>
+
+</head>
+<body id="home2">
+<div class="wrapper">
+    <div class="main">
+        <section class="page-1 section-no-border">
+            <div class="page-1 overlay"></div>
+            <div class="section-logo"></div>
+            <div class="page-container">
+                <h1>Realtime object detection and segmentation</h1>
+                <h3>Use everything “out of the box” or create a custom front-end experience leveraging our JavaScript
+                    API</h3>
+            </div>
+        </section>
+
+        <section class="page-2">
+            <div class="page-2 overlay"></div>
+
+            <div class="page-container" style="max-width: 2000px">
+                <div id="playerContainerJason"
+                     style="float: left; height: 580px; display: inline-block"></div>
+                <div id="playerContainerAnton"
+                     style="float: left; height: 580px;display: inline-block"></div>
+            </div>
+        </section>
+    </div>
+</div>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-84190702-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/segMain.js"></script>
+</body>
+</html>
+
