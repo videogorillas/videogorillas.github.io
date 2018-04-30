@@ -25,62 +25,75 @@ function promisToFetchAnton() {
     });
 }
 
-let contJason = document.querySelector("#playerContainerJason");
-let contAnton = document.querySelector("#playerContainerAnton");
 
-var pConfig = {
-    hotkeys: true,
-    playlist: false,
-    search: false,
-    theme: 'vg',
-    plugins: ['filmstrip']
-};
-var playerJason = new VG.Player(contJason, pConfig);
+let promiseJason = new Promise(resolve => {
+    let contJason = document.querySelector("#playerContainerJason");
+    var pConfig = {
+        hotkeys: true,
+        playlist: false,
+        search: false,
+        theme: 'vg',
+        plugins: ['filmstrip']
+    };
+    var playerJason = new VG.Player(contJason, pConfig);
+    var resolveJ;
+    resolveJ = setInterval(() => {
+        console.log("tick jason");
+        promiseToFetchJason().then(s => {
+            if ("LIVE" === s.status) {
+                console.log("ga jason ", s);
+                clearInterval(resolveJ);
 
-var pConfig = {
-    hotkeys: true,
-    playlist: false,
-    search: false,
-    theme: 'vg',
-    plugins: ['filmstrip']
-};
-var playerAnton = new VG.Player(contAnton, pConfig);
+                playerJason.loadUrl("https://beta.live4.io" + s.mpd, function (err) {
+                    if (!err) {
+                        resolve(playerJason);
+                    }
+                });
+            }
+        })
+    }, 420);
 
-var resolveJ;
-resolveJ = setInterval(() => {
-    console.log("tick jason");
-    promiseToFetchJason().then(s => {
-        if ("LIVE" === s.status) {
-            console.log("ga jason ", s);
-            clearInterval(resolveJ);
+});
 
-            playerJason.loadUrl("https://beta.live4.io" + s.mpd, function (err) {
-                if (!err) {
-                    playerJason.play();
-                    playerJason.seekSec(playerJason.getDurationSec() - 1);
-                }
-            });
-        }
-    })
-}, 420);
 
-var resolveA;
-resolveA = setInterval(() => {
-    promisToFetchAnton().then(s => {
-        console.log("tick anton");
-        if ("LIVE" === s.status) {
-            console.log("ga anton ", s);
-            clearInterval(resolveA);
+let promisAnton = new Promise(resolve => {
+    let contAnton = document.querySelector("#playerContainerAnton");
+    var pConfig = {
+        hotkeys: true,
+        playlist: false,
+        search: false,
+        theme: 'vg',
+        plugins: ['filmstrip']
+    };
+    var playerAnton = new VG.Player(contAnton, pConfig);
+    var resolveA;
+    resolveA = setInterval(() => {
+        promisToFetchAnton().then(s => {
+            console.log("tick anton");
+            if ("LIVE" === s.status) {
+                console.log("ga anton ", s);
+                clearInterval(resolveA);
 
-            playerAnton.loadUrl("https://beta.live4.io" + s.mpd, function (err) {
-                if (!err) {
-                    playerAnton.play();
-                    let syncSec = playerJason.getDurationSec();
+                playerAnton.loadUrl("https://beta.live4.io" + s.mpd, function (err) {
+                    if (!err) {
+                        resolve(playerAnton);
+                    }
+                });
+            }
+        })
+    }, 420);
+});
 
-                    playerJason.seekSec(syncSec);
-                    playerAnton.seekSec(syncSec);
-                }
-            });
-        }
-    })
-}, 420);
+
+promiseJason.then(playerJason => {
+    playerJason.play();
+    playerJason.seekSec(playerJason.getDurationSec() - 1);
+
+    promisAnton.then(playerAnton => {
+        playerAnton.play();
+        let syncSec = playerJason.getDurationSec();
+
+        playerJason.seekSec(syncSec);
+        playerAnton.seekSec(syncSec);
+    });
+});
