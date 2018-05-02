@@ -5,10 +5,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['welcome', 'who', 'what', 'services', 'story', 'contact'],
+        anchors:['welcome', 'smoking', 'who', 'what', 'services', 'story', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['VideoGorillas', 'Who We Are', 'What We Do', 'Products and Services', 'Our Story', 'Hit Us Up'],
+        navigationTooltips: ['VideoGorillas', 'Smoking demo', 'Who We Are', 'What We Do', 'Products and Services', 'Our Story', 'Hit Us Up'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -49,6 +49,33 @@ $(document).ready(function() {
         slideSelector: '.slide',
     });
 });
+
+
+// Player
+
+$(document).ready(function() {
+    $('.hex-player-play, .play-button-label').click(function () {
+        $('.page-2.overlay, #page2 div.page-container').fadeOut(1000);
+        elements.player.play();
+    });
+
+    $('.player-features-list').on('mouseover', function (e) {
+        $.fn.fullpage.setAllowScrolling(false);
+    });
+
+    $('.player-features-list').on('mouseleave', function (e) {
+        $.fn.fullpage.setAllowScrolling(true);
+    });
+
+    $('.section-logo, .section-logo-grey, .footer-image').click(function () {
+        window.location.assign('/');
+    });
+
+    $('.vg-icon-gorilla-framework').click(function () {
+        window.location.assign('#player');
+    })
+});
+
 
 // Contact Form 
 

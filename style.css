@@ -198,27 +198,41 @@ div.main section > img {
 	left: 0;
 }
 
+.page-2.overlay {
+	background: url(img/color_bg.svg) no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
 div.main section.page1 {
     background: none;
 }
 
 div.main section.page2 {
-    background-image: url(img/bucket2.jpg);
+    background: none;
 }
 
 div.main section.page3 {
-    background-image: url(img/bucket3.jpg);
+    background-image: url(img/bucket2.jpg);
 }
 
 div.main section.page4 {
-    background-image: url(img/bucket4.jpg);
+    background-image: url(img/bucket3.jpg);
 }
 
 div.main section.page5 {
-    background-image: url(img/bucket5.jpg);
+    background-image: url(img/bucket4.jpg);
 }
 
 div.main section.page6 {
+    background-image: url(img/bucket5.jpg);
+}
+
+div.main section.page7 {
     background-image: url(img/bucket6.jpg);
 }
 
@@ -245,7 +259,7 @@ div.main section.page1 div.vg-logo {
 	background-image: url(img/vg-logo.svg);
 }
 
-div.main section.page2 div.hex-gorilla {
+div.main section.page3 div.hex-gorilla {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -280,6 +294,20 @@ div.main section.page-1 div.learn-more {
 	bottom: 20px;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+div.main section.page2 div.hex-player-play {
+    margin: 0 auto 10px;
+    width: 180px;
+    height: 180px;
+    background-size: 180px 180px;
+    cursor: pointer;
+    background-image: url(img/hex-player-play.svg);
+}
+
+div.main section.page2 div.hex-player-play:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(1.15);
 }
 
 div.main section.page2 .button:hover {
