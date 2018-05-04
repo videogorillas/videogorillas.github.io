@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smoking Model Demo</title>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-teal.min.css">
+</head>
+
+<style>
+    body {
+        margin: 20px;
+    }
+    .input-div {
+        padding: 5px;
+        font-family: monospace;
+    }
+    a {
+        color: blue;
+    }
+
+    p {
+        width: 500px;
+    }
+
+    #status {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .pred-container {
+        margin-bottom: 20px;
+    }
+    .pred-container > div {
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+    .row {
+        display: table-row;
+    }
+    .cell {
+        display: table-cell;
+        padding-right: 20px;
+    }
+</style>
+
+<body>
+<h3>Smoking Model Demo</h3>
+
+<div id="file-container" style="display: none">
+    Upload an image: <input type="file" id="files" name="files[]" multiple="">
+</div>
+
+<div id="status"></div>
+
+<div id="predictions"></div>
+
+<img style="display: none" id="cat" src="smoking/bc585a89dfc1ae3a532229c303803431.jpg" width="299" height="299/">
+</body>
+<script src="smoking/tfjs-examples-mobilenet.js"></script>
+</html>
