@@ -36,7 +36,7 @@ elements.player.loadUrl(videoUrl, function (loadResponse) {
 
         setTimeout(() => {
             ocrView.initView();
-    }, 2000);
+        }, 2000);
 
         elements.player.player.addEventListener("play", (p) => {
             if (!ocrView.finder) {
@@ -65,7 +65,6 @@ elements.player.loadUrl(videoUrl, function (loadResponse) {
             ocrView.finder.style.display = "none";
             }
         });
-
 
     } else {
         console.error(loadResponse);
