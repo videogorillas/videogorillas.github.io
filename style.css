@@ -267,7 +267,7 @@ div.main section.page3 div.hex-gorilla {
 	background-image: url(img/hex-gorilla.png);
 }
 
-div.main section.page-1 div.hex-player-play {
+div.main section.page-1 div.hex-player-play-smoking {
 	margin: 0 auto 10px;
 	width: 180px;
 	height: 180px;
@@ -282,7 +282,7 @@ div.main section.page-1 div.play-button-label {
 	cursor: pointer;
 }
 
-div.main section.page-1 div.hex-player-play:hover {
+div.main section.page-1 div.hex-player-play-smoking:hover {
 	transition: all .5s ease-in-out;
 	transform: scale(1.15);
 }
@@ -296,7 +296,7 @@ div.main section.page-1 div.learn-more {
 	transform: translateX(-50%);
 }
 
-div.main section.page2 div.hex-player-play {
+div.main section.page2 div.hex-player-play-smoking {
     margin: 0 auto 10px;
     width: 180px;
     height: 180px;
@@ -305,7 +305,7 @@ div.main section.page2 div.hex-player-play {
     background-image: url(img/hex-player-play.svg);
 }
 
-div.main section.page2 div.hex-player-play:hover {
+div.main section.page2 div.hex-player-play-smoking:hover {
     transition: all .5s ease-in-out;
     transform: scale(1.15);
 }

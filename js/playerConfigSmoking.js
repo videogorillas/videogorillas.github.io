@@ -1,5 +1,5 @@
 var elements = {};
-var pCont = document.querySelector("#playerContainer");
+var pCont = document.querySelector("#playerContainerSmoking");
 var videoUrl = "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd";
 if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
     videoUrl = "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd";
@@ -7,7 +7,7 @@ if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
 
 if (elements.player == undefined) {
     var pConfig = {
-        hotkeys: true,
+        hotkeys: false,
         playlist: false,
         search: false,
         theme: 'vg',
