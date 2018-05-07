@@ -1,11 +1,11 @@
-var elements = {};
+var elementsSm = {};
 var pCont = document.querySelector("#playerContainerSmoking");
 var videoUrl = "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd";
 if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
     videoUrl = "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd";
 }
 
-if (elements.player == undefined) {
+if (elementsSm.player == undefined) {
     var pConfig = {
         hotkeys: false,
         playlist: false,
@@ -13,12 +13,12 @@ if (elements.player == undefined) {
         theme: 'vg',
         plugins: ['filmstrip']
     };
-    elements.player = new VG.Player(pCont, pConfig);
+    elementsSm.player = new VG.Player(pCont, pConfig);
 }
-elements.player.loadUrl(videoUrl, function (loadResponse) {
-    console.log("loaded", elements.player);
+elementsSm.player.loadUrl(videoUrl, function (loadResponse) {
+    console.log("loaded", elementsSm.player);
     if (!loadResponse) {
-        var timeline = elements.player.getTimeline();
+        var timeline = elementsSm.player.getTimeline();
         console.log("everything loaded " + timeline);
         loadSubs();
         loadAudio();
@@ -29,8 +29,8 @@ elements.player.loadUrl(videoUrl, function (loadResponse) {
             $.fn.fullpage.setAllowScrolling(true);
         });
 
-        let ocr = TimecodeOCRPlugin.init(elements.player.player, "newocr.tf/model.json");
-        let ocrView = new TimecodeOCRView(elements.player.player);
+        let ocr = TimecodeOCRPlugin.init(elementsSm.player.player, "newocr.tf/model.json");
+        let ocrView = new TimecodeOCRView(elementsSm.player.player);
         window.ocr = ocr;
         window.ocrView = ocrView;
 
@@ -38,7 +38,7 @@ elements.player.loadUrl(videoUrl, function (loadResponse) {
             ocrView.initView();
     }, 2000);
 
-        elements.player.player.addEventListener("play", (p)=>{
+        elementsSm.player.player.addEventListener("play", (p)=>{
             if (!ocrView.finder){
             return;
         }
@@ -61,8 +61,8 @@ elements.player.loadUrl(videoUrl, function (loadResponse) {
         }
     });
 
-        elements.player.player.addEventListener("timeupdate", (t)=>{
-            if(!elements.player.player.isPlaying() && ocrView.finder){
+        elementsSm.player.player.addEventListener("timeupdate", (t)=>{
+            if(!elementsSm.player.player.isPlaying() && ocrView.finder){
             ocrView.finder.style.display="none";
         }
     });
@@ -74,7 +74,7 @@ elements.player.loadUrl(videoUrl, function (loadResponse) {
     }
 });
 var loadSubs = function () {
-    var player = elements.player;
+    var player = elementsSm.player;
     var timeline = player.getTimeline();
 
     var urls = ['//kote.videogorillas.com/vmir/videogorillascom/smoking.srt'];
@@ -83,7 +83,7 @@ var loadSubs = function () {
         var codec = VG.Captions.guessSubtitleCodec(url);
         VG.Captions.parseSubs(timeline, url, codec, function (err, subs) {
             if (!err) {
-                subs.title = 'Captions ' + (elements.player.getCaptionsList().length + 1);
+                subs.title = 'Captions ' + (elementsSm.player.getCaptionsList().length + 1);
                 player.addCaptions(subs);
             } else {
                 console.error('Error parsing subs', err);
@@ -92,7 +92,7 @@ var loadSubs = function () {
     })
 };
 var loadAudio = function () {
-    var player = elements.player;
+    var player = elementsSm.player;
     var urls = ['//kote.videogorillas.com/vmir/about_that_oldie.m4a',
         '//kote.videogorillas.com/vmir/the_chase.m4a'
     ];
