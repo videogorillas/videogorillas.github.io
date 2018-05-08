@@ -66,7 +66,7 @@ $(document).ready(function() {
 
     $('.hex-player-play-superres').click(function () {
         $('.page3.overlay, #page3 div.page-container').fadeOut(1000);
-        elementsSR.player.play();
+        players.superRes.player.play();
     });
     
 
