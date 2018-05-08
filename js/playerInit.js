@@ -24,7 +24,7 @@ var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, useOCR, u
             console.log("everything loaded " + timeline);
             loadSubs();
             loadAudio();
-            loadOCR();
+            loadOCR(useOCR);
             $('.vg_addon.vg_addon__list.vg_default-bg.vg_audiolist').on('mouseover', function (e) {
                 $.fn.fullpage.setAllowScrolling(false);
             });
@@ -72,8 +72,8 @@ var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, useOCR, u
         }
     };
     
-    var loadOCR = function () {
-        if (useOCR) {
+    var loadOCR = function (b) {
+        if (b) {
             let ocr = TimecodeOCRPlugin.init(elementsArray.player.player, "newocr.tf/model.json");
             let ocrView = new TimecodeOCRView(elementsArray.player.player);
             window.ocr = ocr;
