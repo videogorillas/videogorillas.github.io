@@ -55,7 +55,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.hex-player-play, .play-button-label').click(function () {
         $('.page-1.overlay, .page-container, .learn-more, .play-button-label').fadeOut(1000);
-        elements.player.play();
+        players.playerPage.player.play();
     });
 
     $('.player-features-list').on('mouseover', function (e) {
