@@ -2,9 +2,9 @@ var initPlayerOCR = () => {
 
     var elementsOCR = {};
     var pCont = document.querySelector("#playerOCR");
-    var videoUrl = "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd";
+    var videoUrl = "//kote.videogorillas.com/vmir/car_damage_detection/TC_mpd/file.mpd";
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-        videoUrl = "//kote.videogorillas.com/vmir/videogorillascom/smoking.mp4";
+        videoUrl = "//kote.videogorillas.com/vmir/car_damage_detection/TC_AugmentedReality.mp4";
     }
 
     if (elementsOCR.player == undefined) {
@@ -76,8 +76,7 @@ var initPlayerOCR = () => {
     var loadSubs = function () {
         var player = elementsOCR.player;
         var timeline = player.getTimeline();
-
-        var urls = ['//kote.videogorillas.com/vmir/videogorillascom/smoking.srt'];
+        var urls = ['//kote.videogorillas.com/vmir/car-inspection.xml'];
 
         urls.forEach(function (url) {
             var codec = VG.Captions.guessSubtitleCodec(url);

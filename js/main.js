@@ -5,10 +5,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['welcome', 'smoking', 'superresolution', 'who', 'what', 'services', 'story', 'contact'],
+        anchors:['welcome', 'smoking', 'superresolution', 'ocr', 'who', 'what', 'services', 'story', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['VideoGorillas', 'Smoking demo', 'Super Resolution', 'Who We Are', 'What We Do', 'Products and Services', 'Our Story', 'Hit Us Up'],
+        navigationTooltips: ['VideoGorillas', 'Smoking demo', 'Super Resolution', 'OCR Timecode Reader', 'Who We Are', 'What We Do', 'Products and Services', 'Our Story', 'Hit Us Up'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -46,7 +46,7 @@ $(document).ready(function() {
 
         //Custom selectors
         sectionSelector: 'section',
-        slideSelector: '.slide',
+        slideSelector: '.slide'
     });
 });
 
@@ -70,7 +70,7 @@ $(document).ready(function() {
     });
     
     $('.hex-player-play-ocr').click(function () {
-        $('.page3.overlay, #page3 div.page-container').fadeOut(1000);
+        $('.page4.overlay, #page4 div.page-container').fadeOut(1000);
         players.ocr.player.play();
     });
     
