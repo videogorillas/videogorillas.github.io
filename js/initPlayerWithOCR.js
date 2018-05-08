@@ -1,8 +1,8 @@
 var elements = {};
 var pCont = document.querySelector("#playerContainer");
 var videoUrl = "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd";
-if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-    videoUrl = "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd";
+if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+    videoUrl = "//kote.videogorillas.com/vmir/videogorillascom/smoking.mp4";
 }
 
 if (elements.player == undefined) {
@@ -34,40 +34,37 @@ elements.player.loadUrl(videoUrl, function (loadResponse) {
         window.ocr = ocr;
         window.ocrView = ocrView;
 
-        setTimeout(()=>{
+        setTimeout(() => {
             ocrView.initView();
-    }, 2000);
+        }, 2000);
 
-        elements.player.player.addEventListener("play", (p)=>{
-            if (!ocrView.finder){
+        elements.player.player.addEventListener("play", (p) => {
+            if (!ocrView.finder) {
             return;
         }
 
-        if (p){
-            ocrView.finder.style.display="none";
+        if (p) {
+            ocrView.finder.style.display = "none";
         } else {
-            setTimeout(()=>{
+            setTimeout(() => {
                 ocr.detectCurrentFrame(tc_and_bbox => {
-                ocrView.finder.style.display="block";
+                ocrView.finder.style.display = "block";
             let tc = tc_and_bbox[0];
             let box = tc_and_bbox[1];
             console.log(tc);
             ocrView.finder.innerText = "OCRed timecode: " + tc;
-            if (box){
+            if (box) {
                 TimecodeOCRView.placeFinderBBox(box, ocrView.finder);
             }
+            }); }, 420);
+            }
         });
-        }, 420);
-        }
-    });
 
-        elements.player.player.addEventListener("timeupdate", (t)=>{
-            if(!elements.player.player.isPlaying() && ocrView.finder){
-            ocrView.finder.style.display="none";
-        }
-    });
-
-
+        elements.player.player.addEventListener("timeupdate", (t) => {
+            if(!elements.player.player.isPlaying() && ocrView.finder) {
+            ocrView.finder.style.display = "none";
+            }
+        });
 
     } else {
         console.error(loadResponse);

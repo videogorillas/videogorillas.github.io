@@ -11,6 +11,7 @@
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="vgplayer/vgplayer.min.css">
     <script type="text/javascript" src="vgplayer/vgplayer.js"></script>
+    <script src="js/playerInit.js"></script>
 	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
@@ -40,19 +41,32 @@
 		    </section>
 			
 		    <section class="page2 section-no-border" id="page2">
-                <div class="page-2 overlay"></div>
+                <div class="page2 overlay"></div>
                 <div class="section-logo"></div>
 				<div class="page-container">
-					<div class="hex hex-player-play"></div>
+					<div class="hex hex-player-play-smoking"></div>
 					<div class="play-button-label"></div>
 					<h3>Do you need to detect nudity, profanity, smoking or any other standarts&amp;practices in a video? Click play for smoking detection demo</h3>
 					<h1>STANDARTS &amp; PRACTICES</h1>
 				</div>
-				<div id="playerContainer" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
+				<div id="playerContainerSmoking" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
+				
+		    </section>
+            
+		    <section class="page3 section-no-border" id="page3">
+                <div class="page3 overlay"></div>
+                <div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-player-play-superres"></div>
+					<div class="play-button-label"></div>
+					<h3>Same movie, but better. Check out our super resolution demo</h3>
+					<h1>SUPER RESOLUTION</h1>
+				</div>
+				<div id="playerContainerSuperRes" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
 				
 		    </section>
 			
-		    <section class="page3" id="page3">
+		    <section class="page4" id="page4">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<div class="hex hex-gorilla">
@@ -74,7 +88,7 @@ Video Gorillas makes the seemingly impossible possible. If modern software devel
 					</div>
 				</div>
 		    </section>
-		    <section class="page4">
+		    <section class="page5">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<div class="hex hex-work">
@@ -106,7 +120,7 @@ Video Gorillas makes the seemingly impossible possible. If modern software devel
 					</div>
 				</div>
 		    </section>
-		    <section class="page5">
+		    <section class="page6">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<h2>Products and Services</h2>
@@ -189,7 +203,7 @@ Video Gorillas makes the seemingly impossible possible. If modern software devel
 					</div>
 				</div>
 		    </section>
-		    <section class="page6">
+		    <section class="page7">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<div class="hex hex-people">
@@ -228,7 +242,7 @@ Our Gorillas include talented developers, video engineers, system engineers, mac
 					</div>
 				</div>
 		    </section>
-		    <section class="page7 section-no-border">
+		    <section class="page8 section-no-border">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<h2 id="contact-headline">Hit Us Up</h2>
@@ -237,17 +251,32 @@ Our Gorillas include talented developers, video engineers, system engineers, mac
 		    </section>
 		</div>
 	</div>
-    <script src="js/playerConfig.js"></script>
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-84190702-1', 'auto');
-  ga('send', 'pageview');
+    <script type="text/javascript">
+        var players = {};
+        players.smoking = playerInit("elementsSmoking", "playerContainerSmoking", "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd",
+                "//kote.videogorillas.com/vmir/videogorillascom/smoking.mp4", ["//kote.videogorillas.com/vmir/videogorillascom/smoking.srt"],
+                ["//kote.videogorillas.com/vmir/about_that_oldie.m4a", "//kote.videogorillas.com/vmir/the_chase.m4a"]);
+        players.superRes = playerInit("elementsSR", "playerContainerSuperRes", "//kote.videogorillas.com/vmir/videogorillascom/superres-dash/file.mpd",
+                "//kote.videogorillas.com/vmir/videogorillascom/super-res-demo.mp4")
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-</script>
+        ga('create', 'UA-84190702-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
