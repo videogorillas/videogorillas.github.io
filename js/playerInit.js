@@ -1,4 +1,4 @@
-var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, subUrlsArray, audioUrlsArray) {
+var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, useOCR, useHotkeys, subUrlsArray, audioUrlsArray) {
 
     var elementsArray = {};
     var pCont = document.querySelector("#" + containerId);
@@ -9,7 +9,7 @@ var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, subUrlsAr
 
     if (elementsArray.player == undefined) {
         var pConfig = {
-            hotkeys: false,
+            hotkeys: useHotkeys,
             playlist: false,
             search: false,
             theme: 'vg',
@@ -24,6 +24,7 @@ var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, subUrlsAr
             console.log("everything loaded " + timeline);
             loadSubs();
             loadAudio();
+            loadOCR();
             $('.vg_addon.vg_addon__list.vg_default-bg.vg_audiolist').on('mouseover', function (e) {
                 $.fn.fullpage.setAllowScrolling(false);
             });
@@ -68,6 +69,48 @@ var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, subUrlsAr
                     }
                 });
             })
+        }
+    };
+    
+    var loadOCR = function () {
+        if (useOCR) {
+            let ocr = TimecodeOCRPlugin.init(elementsArray.player.player, "newocr.tf/model.json");
+            let ocrView = new TimecodeOCRView(elementsArray.player.player);
+            window.ocr = ocr;
+            window.ocrView = ocrView;
+
+            setTimeout(() => {
+                ocrView.initView();
+            }, 2000);
+
+            elementsArray.player.player.addEventListener("play", (p) => {
+                if (!ocrView.finder) {
+                    return;
+                }
+
+                if (p) {
+                    ocrView.finder.style.display = "none";
+                } else {
+                    setTimeout(() => {
+                        ocr.detectCurrentFrame(tc_and_bbox => {
+                            ocrView.finder.style.display = "block";
+                            let tc = tc_and_bbox[0];
+                            let box = tc_and_bbox[1];
+                            console.log(tc);
+                            ocrView.finder.innerText = "OCRed timecode: " + tc;
+                            if (box) {
+                                TimecodeOCRView.placeFinderBBox(box, ocrView.finder);
+                            }
+                        });
+                    }, 420);
+                }
+            });
+
+            elementsArray.player.player.addEventListener("timeupdate", (t) => {
+                if (!elementsOCR.player.player.isPlaying() && ocrView.finder) {
+                    ocrView.finder.style.display = "none";
+                }
+            });
         }
     };
 
