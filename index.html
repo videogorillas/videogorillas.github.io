@@ -65,8 +65,21 @@
 				<div id="playerContainerSuperRes" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
 				
 		    </section>
+            
+		    <section class="page4 section-no-border" id="page4">
+                <div class="page4 overlay"></div>
+                <div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-player-play-ocr"></div>
+					<div class="play-button-label"></div>
+					<h3>Play video. Pause it. Wait for the timecode detection frame to appear</h3>
+					<h1>OCR TIMECODE READER</h1>
+				</div>
+				<div id="playerOCR" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
+				
+		    </section>
 			
-		    <section class="page4" id="page4">
+		    <section class="page5" id="page5">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<div class="hex hex-gorilla">
@@ -88,7 +101,7 @@ Video Gorillas makes the seemingly impossible possible. If modern software devel
 					</div>
 				</div>
 		    </section>
-		    <section class="page5">
+		    <section class="page6">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<div class="hex hex-work">
@@ -120,7 +133,7 @@ Video Gorillas makes the seemingly impossible possible. If modern software devel
 					</div>
 				</div>
 		    </section>
-		    <section class="page6">
+		    <section class="page7">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<h2>Products and Services</h2>
@@ -203,7 +216,7 @@ Video Gorillas makes the seemingly impossible possible. If modern software devel
 					</div>
 				</div>
 		    </section>
-		    <section class="page7">
+		    <section class="page8">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<div class="hex hex-people">
@@ -242,7 +255,7 @@ Our Gorillas include talented developers, video engineers, system engineers, mac
 					</div>
 				</div>
 		    </section>
-		    <section class="page8 section-no-border">
+		    <section class="page9 section-no-border">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<h2 id="contact-headline">Hit Us Up</h2>
@@ -252,6 +265,7 @@ Our Gorillas include talented developers, video engineers, system engineers, mac
 		</div>
 	</div>
 
+    <script src="js/initPlayerWithOCR.js"></script>
     <script type="text/javascript">
         var players = {};
         players.smoking = playerInit("elementsSmoking", "playerContainerSmoking", "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd",
