@@ -54,10 +54,6 @@ $(document).ready(function() {
 // Player
 
 $(document).ready(function() {
-    $('.hex-player-play, .play-button-label').click(function () {
-        $('.page-2.overlay, #page2 div.page-container').fadeOut(1000);
-        elements.player.play();
-    });
     
     $('.hex-player-play-smoking').click(function () {
         $('.page2.overlay, #page2 div.page-container').fadeOut(1000);
