@@ -61,7 +61,7 @@ $(document).ready(function() {
     
     $('.hex-player-play-smoking').click(function () {
         $('.page2.overlay, #page2 div.page-container').fadeOut(1000);
-        elementsSm.player.play();
+        players.smoking.play();
     });
 
     $('.hex-player-play-superres').click(function () {
