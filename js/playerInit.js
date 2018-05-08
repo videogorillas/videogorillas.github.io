@@ -1,4 +1,4 @@
-var initPlayer = function (elementsArray, containerId, urlMpd, urlMp4, subUrlsArray, audioUrlsArray) {
+var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, subUrlsArray, audioUrlsArray) {
 
     var elementsArray = {};
     var pCont = document.querySelector("#" + containerId);

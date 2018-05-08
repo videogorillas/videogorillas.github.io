@@ -11,7 +11,7 @@
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="vgplayer/vgplayer.min.css">
     <script type="text/javascript" src="vgplayer/vgplayer.js"></script>
-    <script src="js/setPlayerConfig.js"></script>
+    <script src="js/playerInit.js"></script>
 	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
@@ -254,10 +254,10 @@ Our Gorillas include talented developers, video engineers, system engineers, mac
 
     <script type="text/javascript">
         var players = {};
-        players.smoking = initPlayer("elementsSmoking", "playerContainerSmoking", "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd",
+        players.smoking = playerInit("elementsSmoking", "playerContainerSmoking", "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd",
                 "//kote.videogorillas.com/vmir/videogorillascom/smoking.mp4", ["//kote.videogorillas.com/vmir/videogorillascom/smoking.srt"],
                 ["//kote.videogorillas.com/vmir/about_that_oldie.m4a", "//kote.videogorillas.com/vmir/the_chase.m4a"]);
-        players.superRes = initPlayer("elementsSR", "playerContainerSuperRes", "//kote.videogorillas.com/vmir/videogorillascom/superres-dash/file.mpd",
+        players.superRes = playerInit("elementsSR", "playerContainerSuperRes", "//kote.videogorillas.com/vmir/videogorillascom/superres-dash/file.mpd",
                 "//kote.videogorillas.com/vmir/videogorillascom/super-res-demo.mp4")
     </script>
     <script>
