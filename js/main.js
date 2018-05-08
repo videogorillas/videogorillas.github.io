@@ -69,6 +69,11 @@ $(document).ready(function() {
         players.superRes.player.play();
     });
     
+    $('.hex-player-play-ocr').click(function () {
+        $('.page3.overlay, #page3 div.page-container').fadeOut(1000);
+        players.ocr.player.play();
+    });
+    
 
     $('.player-features-list').on('mouseover', function (e) {
         $.fn.fullpage.setAllowScrolling(false);
