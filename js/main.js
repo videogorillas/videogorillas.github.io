@@ -5,10 +5,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['welcome', 'smoking', 'superresolution', 'ocr', 'who', 'what', 'services', 'story', 'contact'],
+        anchors:['welcome', 'smoking', 'superresolution', 'ocr', 'shotsdetection', 'who', 'what', 'services', 'story', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['VideoGorillas', 'Smoking demo', 'Super Resolution', 'OCR Timecode Reader', 'Who We Are', 'What We Do', 'Products and Services', 'Our Story', 'Hit Us Up'],
+        navigationTooltips: ['VideoGorillas', 'Smoking demo', 'Super Resolution', 'OCR Timecode Reader', 'Shots Detection', 'Who We Are', 'What We Do', 'Products and Services', 'Our Story', 'Hit Us Up'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -68,6 +68,11 @@ $(document).ready(function() {
     $('.hex-player-play-ocr').click(function () {
         $('.page4.overlay, #page4 div.page-container').fadeOut(1000);
         players.ocr.player.play();
+    });
+    
+    $('.hex-player-play-shd, .page5 .play-button-label').click(function () {
+        $('.page5.overlay, #page5 div.page-container').fadeOut(1000);
+        players.shd.player.play();
     });
     
 

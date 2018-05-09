@@ -79,8 +79,20 @@
 				<div id="playerOCR" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
 				
 		    </section>
+            
+		    <section class="page5 section-no-border" id="page5">
+                <div class="page5 overlay"></div>
+                <div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-player-play-shd"></div>
+					<div class="play-button-label">Click here to see how we can detect scene breaks in a movie</div>
+					<h1>SHOTS DETECTION</h1>
+				</div>
+				<div id="playerContainerShD" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
+				
+		    </section>
 			
-		    <section class="page5" id="page5">
+		    <section class="page6" id="page6">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<div class="hex hex-gorilla">
@@ -102,7 +114,7 @@ Video Gorillas makes the seemingly impossible possible. If modern software devel
 					</div>
 				</div>
 		    </section>
-		    <section class="page6">
+		    <section class="page7">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<div class="hex hex-work">
@@ -134,7 +146,7 @@ Video Gorillas makes the seemingly impossible possible. If modern software devel
 					</div>
 				</div>
 		    </section>
-		    <section class="page7">
+		    <section class="page8">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<h2>Products and Services</h2>
@@ -217,7 +229,7 @@ Video Gorillas makes the seemingly impossible possible. If modern software devel
 					</div>
 				</div>
 		    </section>
-		    <section class="page8">
+		    <section class="page9">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<div class="hex hex-people">
@@ -256,7 +268,7 @@ Our Gorillas include talented developers, video engineers, system engineers, mac
 					</div>
 				</div>
 		    </section>
-		    <section class="page9 section-no-border">
+		    <section class="page10 section-no-border">
 				<div class="section-logo"></div>
 				<div class="page-container">
 					<h2 id="contact-headline">Hit Us Up</h2>
@@ -279,8 +291,8 @@ Our Gorillas include talented developers, video engineers, system engineers, mac
                 "//kote.videogorillas.com/vmir/car_damage_detection/TC_AugmentedReality.mp4", true, false, ['//kote.videogorillas.com/vmir/car-inspection.xml'],
                 ['//kote.videogorillas.com/vmir/about_that_oldie.m4a', '//kote.videogorillas.com/vmir/the_chase.m4a']);
         
-        player.shd = playerInit("elementsShd", "playerContainerShD", "//kote.videogorillas.com/vmir/videogorillascom/shotsDetection.mov",
-                "//kote.videogorillas.com/vmir/videogorillascom/shotsDetection.mov", false, false, "//kote.videogorillas.com/vmir/videogorillascom/shotsDetection.srt");
+        players.shd = playerInit("elementsShd", "playerContainerShD", "//kote.videogorillas.com/vmir/videogorillascom/shotsDetection.mov",
+                "//kote.videogorillas.com/vmir/videogorillascom/shotsDetection.mov", false, false, ["//kote.videogorillas.com/vmir/videogorillascom/shotsDetection.srt"]);
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
