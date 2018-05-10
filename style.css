@@ -225,6 +225,15 @@ background: url(img/color_bg_green.svg) no-repeat center center;
 	right: 0;
 	left: 0;
 }
+.page5.overlay {
+background: url(img/color_bg_red.svg) no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
 
 div.main section.page1 {
     background: none;
@@ -243,22 +252,26 @@ div.main section.page4 {
 }
 
 div.main section.page5 {
-    background-image: url(img/bucket2.jpg);
+    background: none;
 }
 
 div.main section.page6 {
-    background-image: url(img/bucket3.jpg);
+    background-image: url(img/bucket2.jpg);
 }
 
 div.main section.page7 {
-    background-image: url(img/bucket4.jpg);
+    background-image: url(img/bucket3.jpg);
 }
 
 div.main section.page8 {
-    background-image: url(img/bucket5.jpg);
+    background-image: url(img/bucket4.jpg);
 }
 
 div.main section.page9 {
+    background-image: url(img/bucket5.jpg);
+}
+
+div.main section.page10 {
     background-image: url(img/bucket6.jpg);
 }
 
@@ -285,7 +298,7 @@ div.main section.page1 div.vg-logo {
 	background-image: url(img/vg-logo.svg);
 }
 
-div.main section.page5 div.hex-gorilla {
+div.main section.page6 div.hex-gorilla {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -306,6 +319,12 @@ div.main section.page-1 div.play-button-label {
 	font-size: 20px;
 	margin-bottom: 20px;
 	cursor: pointer;
+}
+
+div.play-button-label {
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 div.main section.page-1 div.hex-player-play:hover {
@@ -460,7 +479,7 @@ div.main section.page-3 .vg-products .vg-icon-detector {
 	transform: translate(-101px, -70px);
 }
 
-div.main section.page6 div.hex-work {
+div.main section.page7 div.hex-work {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -468,11 +487,11 @@ div.main section.page6 div.hex-work {
 	background-image: url(img/hex-gear.png);
 }
 
-div.main section.page5 .button:hover {
+div.main section.page6 .button:hover {
 	color: #6253C1;
 }
 
-div.main section.page6 .button:hover {
+div.main section.page7 .button:hover {
 	color: #6253C1;
 }
 
@@ -545,28 +564,40 @@ div.main section.page4 div.hex-player-play-ocr {
     background-image: url(img/hex-player-play.svg);
 }
 
-div.main section.page4 div.hex-player-play-superres:hover {
+div.main section.page4 div.hex-player-play-ocr:hover {
     transition: all .5s ease-in-out;
     transform: scale(1.15);
 }
 
+div.main section.page5 div.hex-player-play-shd {
+    margin: 0 auto 10px;
+    width: 180px;
+    height: 180px;
+    background-size: 180px 180px;
+    cursor: pointer;
+    background-image: url(img/hex-player-play.svg);
+}
 
+div.main section.page5 div.hex-player-play-shd:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(1.15);
+}
 
-div.main section.page7 h3 {
+div.main section.page8 h3 {
 	margin-bottom: 46px;
 }
 
-div.main section.page7 div.column {
+div.main section.page8 div.column {
 	float: left;
 	margin: 0 20px;
 	width: 197px;
 }
 
-div.main section.page7 div.column h4 {
+div.main section.page8 div.column h4 {
 	font-size: 20px;
 }
 
-div.main section.page7 div.hex-player {
+div.main section.page8 div.hex-player {
 	margin: 0px auto 10px;
 	width: 110px;
 	height: 110px;
@@ -574,7 +605,7 @@ div.main section.page7 div.hex-player {
 	background-image: url(img/hex-play.png);
 }
 
-div.main section.page7 div.hex-live4 {
+div.main section.page8 div.hex-live4 {
 	margin: 0px auto 10px;
 	width: 110px;
 	height: 110px;
@@ -582,7 +613,7 @@ div.main section.page7 div.hex-live4 {
 	background-image: url(img/hex-live4.png);
 }
 
-div.main section.page7 div.hex-brain {
+div.main section.page8 div.hex-brain {
 	margin: 0px auto 10px;
 	width: 110px;
 	height: 110px;
@@ -590,7 +621,7 @@ div.main section.page7 div.hex-brain {
 	background-image: url(img/hex-brain.png);
 }
 
-div.main section.page7 div.hex-tag {
+div.main section.page8 div.hex-tag {
 	margin: 0px auto 10px;
 	width: 110px;
 	height: 110px;
@@ -598,11 +629,11 @@ div.main section.page7 div.hex-tag {
 	background-image: url(img/hex-tag.png);
 }
 
-div.main section.page7 .button:hover {
+div.main section.page8 .button:hover {
 	color: #FD9453;
 }
 
-div.main section.page7 div.buttons {
+div.main section.page8 div.buttons {
 	margin: 0px 0 30px;
 }
 
@@ -731,11 +762,11 @@ div.main section.page-5 .footer-image img {
 	background-size: 60px 30px;
 }
 
-div.main section.page8 div.buttons {
+div.main section.page9 div.buttons {
 	margin: 30px 0 46px;
 }
 
-div.main section.page8 div.hex-people {
+div.main section.page9 div.hex-people {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -743,7 +774,7 @@ div.main section.page8 div.hex-people {
 	background-image: url(img/hex-people.png);
 }
 
-div.main section.page8 .button:hover {
+div.main section.page9 .button:hover {
 	color: #5B559B;
 }
 
