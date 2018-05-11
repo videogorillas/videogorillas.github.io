@@ -83,7 +83,7 @@ var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, useOCR, u
                 ocrView.initView();
             }, 2000);
 
-            elementsArray.player.player.addEventListener("play", (p) => {
+            elementsArray.player.addEventListener("play", (p) => {
                 if (!ocrView.finder) {
                     return;
                 }
@@ -106,8 +106,8 @@ var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, useOCR, u
                 }
             });
 
-            elementsArray.player.player.addEventListener("timeupdate", (t) => {
-                if (!elementsOCR.player.player.isPlaying() && ocrView.finder) {
+            elementsArray.player.addEventListener("timeupdate", (t) => {
+                if (!elementsArray.player.isPlaying() && ocrView.finder) {
                     ocrView.finder.style.display = "none";
                 }
             });
