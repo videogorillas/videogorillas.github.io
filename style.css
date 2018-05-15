@@ -569,6 +569,10 @@ div.main section.page4 div.hex-player-play-ocr:hover {
     transform: scale(1.15);
 }
 
+div.main section.page4 div.vg_frozen_container {
+	display: none;
+}
+
 div.main section.page5 div.hex-player-play-shd {
     margin: 0 auto 10px;
     width: 180px;
