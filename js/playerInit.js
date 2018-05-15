@@ -24,7 +24,9 @@ var playerInit = function (elementsArray, containerId, urlMpd, urlMp4, useOCR, u
             console.log("everything loaded " + timeline);
             loadSubs();
             loadAudio();
-            loadOCR(useOCR);
+            if (useOCR) {
+                loadOCR(useOCR)
+            } 
             $('.vg_addon.vg_addon__list.vg_default-bg.vg_audiolist').on('mouseover', function (e) {
                 $.fn.fullpage.setAllowScrolling(false);
             });
