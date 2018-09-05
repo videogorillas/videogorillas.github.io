@@ -491,6 +491,10 @@ div.main section.page6 .button:hover {
 	color: #6253C1;
 }
 
+div.main section.page6 .page-container .bigfoot-description {
+	text-align: left;
+}
+
 div.main section.page7 .button:hover {
 	color: #6253C1;
 }
