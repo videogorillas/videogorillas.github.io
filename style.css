@@ -256,22 +256,26 @@ div.main section.page5 {
 }
 
 div.main section.page6 {
-    background-image: url(img/bucket2.jpg);
+	background-image: url(img/bucket5.jpg);
 }
 
 div.main section.page7 {
-    background-image: url(img/bucket3.jpg);
+    background-image: url(img/bucket2.jpg);
 }
 
 div.main section.page8 {
-    background-image: url(img/bucket4.jpg);
+    background-image: url(img/bucket3.jpg);
 }
 
 div.main section.page9 {
-    background-image: url(img/bucket5.jpg);
+    background-image: url(img/bucket4.jpg);
 }
 
 div.main section.page10 {
+    background-image: url(img/bucket5.jpg);
+}
+
+div.main section.page11 {
     background-image: url(img/bucket6.jpg);
 }
 
@@ -299,6 +303,14 @@ div.main section.page1 div.vg-logo {
 }
 
 div.main section.page6 div.hex-gorilla {
+	margin: 0 auto 20px;
+	width: 180px;
+	height: 180px;
+	background-size: 180px 180px;
+	background-image: url(img/hex-gorilla.png);
+}
+
+div.main section.page7 div.hex-gorilla {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -479,7 +491,7 @@ div.main section.page-3 .vg-products .vg-icon-detector {
 	transform: translate(-101px, -70px);
 }
 
-div.main section.page7 div.hex-work {
+div.main section.page8 div.hex-work {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -487,11 +499,15 @@ div.main section.page7 div.hex-work {
 	background-image: url(img/hex-gear.png);
 }
 
-div.main section.page6 .button:hover {
-	color: #6253C1;
+div.main section.page6 .page-container .bigfoot-description {
+	text-align: left;
 }
 
 div.main section.page7 .button:hover {
+	color: #6253C1;
+}
+
+div.main section.page8 .button:hover {
 	color: #6253C1;
 }
 
@@ -587,21 +603,21 @@ div.main section.page5 div.hex-player-play-shd:hover {
     transform: scale(1.15);
 }
 
-div.main section.page8 h3 {
+div.main section.page9 h3 {
 	margin-bottom: 46px;
 }
 
-div.main section.page8 div.column {
+div.main section.page9 div.column {
 	float: left;
 	margin: 0 20px;
 	width: 197px;
 }
 
-div.main section.page8 div.column h4 {
+div.main section.page9 div.column h4 {
 	font-size: 20px;
 }
 
-div.main section.page8 div.hex-player {
+div.main section.page7 div.hex-player, div.main section.page9 div.hex-player {
 	margin: 0px auto 10px;
 	width: 110px;
 	height: 110px;
@@ -609,7 +625,7 @@ div.main section.page8 div.hex-player {
 	background-image: url(img/hex-play.png);
 }
 
-div.main section.page8 div.hex-live4 {
+div.main section.page9 div.hex-live4 {
 	margin: 0px auto 10px;
 	width: 110px;
 	height: 110px;
@@ -617,7 +633,7 @@ div.main section.page8 div.hex-live4 {
 	background-image: url(img/hex-live4.png);
 }
 
-div.main section.page8 div.hex-brain {
+div.main section.page9 div.hex-brain {
 	margin: 0px auto 10px;
 	width: 110px;
 	height: 110px;
@@ -625,7 +641,7 @@ div.main section.page8 div.hex-brain {
 	background-image: url(img/hex-brain.png);
 }
 
-div.main section.page8 div.hex-tag {
+div.main section.page9 div.hex-tag {
 	margin: 0px auto 10px;
 	width: 110px;
 	height: 110px;
@@ -633,11 +649,11 @@ div.main section.page8 div.hex-tag {
 	background-image: url(img/hex-tag.png);
 }
 
-div.main section.page8 .button:hover {
+div.main section.page9 .button:hover {
 	color: #FD9453;
 }
 
-div.main section.page8 div.buttons {
+div.main section.page9 div.buttons {
 	margin: 0px 0 30px;
 }
 
@@ -766,11 +782,11 @@ div.main section.page-5 .footer-image img {
 	background-size: 60px 30px;
 }
 
-div.main section.page9 div.buttons {
+div.main section.page10 div.buttons {
 	margin: 30px 0 46px;
 }
 
-div.main section.page9 div.hex-people {
+div.main section.page10 div.hex-people {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -778,7 +794,7 @@ div.main section.page9 div.hex-people {
 	background-image: url(img/hex-people.png);
 }
 
-div.main section.page9 .button:hover {
+div.main section.page10 .button:hover {
 	color: #5B559B;
 }
 
