@@ -198,7 +198,7 @@ div.main section > img {
 	left: 0;
 }
 
-.page2.overlay {
+.page4.overlay {
 	background: url(img/color_bg.svg) no-repeat center center;
 	background-size: cover;
 	position: absolute;
@@ -575,7 +575,7 @@ div.main section.page-4 .features-list ul {
 	line-height: 3rem;
 }
 
-div.main section.page2 div.hex-player-play-smoking {
+div.main section.page4 div.hex-player-play-smoking {
     margin: 0 auto 10px;
     width: 180px;
     height: 180px;
@@ -584,7 +584,7 @@ div.main section.page2 div.hex-player-play-smoking {
     background-image: url(img/hex-player-play.svg);
 }
 
-div.main section.page2 div.hex-player-play-smoking:hover {
+div.main section.page4 div.hex-player-play-smoking:hover {
     transition: all .5s ease-in-out;
     transform: scale(1.15);
 }
