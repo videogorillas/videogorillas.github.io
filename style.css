@@ -244,7 +244,7 @@ div.main section.page2 {
 }
 
 div.main section.page3 {
-    background: none;
+    background-image: url("img/bmx-bycicle-rider-in-the-air.jpg");
 }
 
 div.main section.page4 {
@@ -505,16 +505,35 @@ div.main section.page2 .page-container .bigfoot-description {
 }
 
 div.main section.page2 .page-container .bigfoot-description p {
+    width: 70%;
 	padding-top: 21px;
 }
 
 div.main section.page2 .page-container .bigfoot-description_img {
-    width: 100%;
+    width: 30%;
     height: auto;
 }
 
 div.main section.page2 .page-container .bigfoot-description_img img {
-    width: inherit;
+    width: 100%;
+}
+
+div.main section.page3 .page-container .live4-description {
+	display: flex;
+	text-align: left;
+}
+
+div.main section.page3 .page-container .live4-description_img {
+    width: 35%;
+    height: auto;
+}
+
+div.main section.page3 .page-container .live4-description p {
+	width: 65%;
+}
+
+div.main section.page3 .page-container .live4-description_img img {
+    width: 100%;
 }
 
 div.main section.page7 .button:hover {
@@ -570,7 +589,6 @@ div.main section.page2 div.hex-player-play-smoking:hover {
     transform: scale(1.15);
 }
 
-
 div.main section.page3 div.hex-player-play-superres {
     margin: 0 auto 10px;
     width: 180px;
@@ -583,6 +601,14 @@ div.main section.page3 div.hex-player-play-superres {
 div.main section.page3 div.hex-player-play-superres:hover {
     transition: all .5s ease-in-out;
     transform: scale(1.15);
+}
+
+div.main section.page3 div.hex-live4 {
+    margin: 0px auto 10px;
+    width: 110px;
+    height: 110px;
+    background-size: 110px 110px;
+    background-image: url(img/hex-live4.png);
 }
 
 div.main section.page4 div.hex-player-play-ocr {
@@ -637,14 +663,6 @@ div.main section.page7 div.hex-player, div.main section.page9 div.hex-player {
 	height: 110px;
 	background-size: 110px 110px;
 	background-image: url(img/hex-play.png);
-}
-
-div.main section.page9 div.hex-live4 {
-	margin: 0px auto 10px;
-	width: 110px;
-	height: 110px;
-	background-size: 110px 110px;
-	background-image: url(img/hex-live4.png);
 }
 
 div.main section.page9 div.hex-brain {
