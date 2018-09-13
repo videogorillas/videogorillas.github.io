@@ -5,10 +5,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['welcome', 'smoking', 'superresolution', 'ocr', 'shotsdetection', 'bigfoot', 'who', 'what', 'services', 'story', 'contact'],
+        anchors:['welcome', 'bigfoot', 'live4', 'smoking', 'superresolution', 'ocr', 'shotsdetection', 'who', 'what', 'story', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['VideoGorillas', 'Smoking demo', 'Super Resolution', 'OCR Timecode Reader', 'Shots Detection', 'Bigfoot', 'Who We Are', 'What We Do', 'Products and Services', 'Our Story', 'Hit Us Up'],
+        navigationTooltips: ['VideoGorillas', 'Bigfoot', 'Live4', 'Smoking demo', 'Super Resolution', 'OCR Timecode Reader', 'Shots Detection', 'Who We Are', 'What We Do', 'Our story', 'Hit Us Up'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
