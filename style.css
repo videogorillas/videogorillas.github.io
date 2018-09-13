@@ -240,7 +240,7 @@ div.main section.page1 {
 }
 
 div.main section.page2 {
-    background: none;
+	background-image: url(img/bucket4.jpg);
 }
 
 div.main section.page3 {
@@ -302,7 +302,7 @@ div.main section.page1 div.vg-logo {
 	background-image: url(img/vg-logo.svg);
 }
 
-div.main section.page6 div.hex-gorilla {
+div.main section.page2 div.hex-gorilla {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -499,8 +499,22 @@ div.main section.page8 div.hex-work {
 	background-image: url(img/hex-gear.png);
 }
 
-div.main section.page6 .page-container .bigfoot-description {
+div.main section.page2 .page-container .bigfoot-description {
+	display: flex;
 	text-align: left;
+}
+
+div.main section.page2 .page-container .bigfoot-description p {
+	padding-top: 21px;
+}
+
+div.main section.page2 .page-container .bigfoot-description_img {
+    width: 100%;
+    height: auto;
+}
+
+div.main section.page2 .page-container .bigfoot-description_img img {
+    width: inherit;
 }
 
 div.main section.page7 .button:hover {
