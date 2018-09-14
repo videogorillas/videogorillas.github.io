@@ -197,8 +197,7 @@ div.main section > img {
 	right: 0;
 	left: 0;
 }
-
-.page2.overlay {
+.page4.overlay {
 	background: url(img/color_bg.svg) no-repeat center center;
 	background-size: cover;
 	position: absolute;
@@ -207,26 +206,26 @@ div.main section > img {
 	right: 0;
 	left: 0;
 }
-.page3.overlay {
-background: url(img/color_bg_orange.svg) no-repeat center center;
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-}
-.page4.overlay {
-background: url(img/color_bg_green.svg) no-repeat center center;
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-}
 .page5.overlay {
-background: url(img/color_bg_red.svg) no-repeat center center;
+    background: url(img/color_bg_orange.svg) no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.page6.overlay {
+    background: url(img/color_bg_green.svg) no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.page7.overlay {
+    background: url(img/color_bg_red.svg) no-repeat center center;
 	background-size: cover;
 	position: absolute;
 	top: 0;
@@ -240,18 +239,18 @@ div.main section.page1 {
 }
 
 div.main section.page2 {
-    background: none;
+	background-image: url(img/bucket4.jpg);
 }
 
 div.main section.page3 {
+    background-image: url("img/bmx-bycicle-rider-in-the-air.jpg");
+}
+
+div.main section.page6 {
     background: none;
 }
 
-div.main section.page4 {
-    background: none;
-}
-
-div.main section.page5 {
+div.main section.page7 {
     background: none;
 }
 
@@ -259,16 +258,12 @@ div.main section.page6 {
 	background-image: url(img/bucket5.jpg);
 }
 
-div.main section.page7 {
+div.main section.page8 {
     background-image: url(img/bucket2.jpg);
 }
 
-div.main section.page8 {
-    background-image: url(img/bucket3.jpg);
-}
-
 div.main section.page9 {
-    background-image: url(img/bucket4.jpg);
+    background-image: url(img/bucket3.jpg);
 }
 
 div.main section.page10 {
@@ -302,7 +297,7 @@ div.main section.page1 div.vg-logo {
 	background-image: url(img/vg-logo.svg);
 }
 
-div.main section.page6 div.hex-gorilla {
+div.main section.page2 div.hex-gorilla {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -310,7 +305,7 @@ div.main section.page6 div.hex-gorilla {
 	background-image: url(img/hex-gorilla.png);
 }
 
-div.main section.page7 div.hex-gorilla {
+div.main section.page8 div.hex-gorilla {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -491,7 +486,7 @@ div.main section.page-3 .vg-products .vg-icon-detector {
 	transform: translate(-101px, -70px);
 }
 
-div.main section.page8 div.hex-work {
+div.main section.page9 div.hex-work {
 	margin: 0 auto 20px;
 	width: 180px;
 	height: 180px;
@@ -499,11 +494,44 @@ div.main section.page8 div.hex-work {
 	background-image: url(img/hex-gear.png);
 }
 
-div.main section.page6 .page-container .bigfoot-description {
+div.main section.page2 .page-container .bigfoot-description {
+	display: flex;
 	text-align: left;
 }
 
-div.main section.page7 .button:hover {
+div.main section.page2 .page-container .bigfoot-description p {
+    width: 70%;
+	padding-top: 21px;
+}
+
+div.main section.page2 .page-container .bigfoot-description_img {
+    width: 30%;
+    height: auto;
+}
+
+div.main section.page2 .page-container .bigfoot-description_img img {
+    width: 100%;
+}
+
+div.main section.page3 .page-container .live4-description {
+	display: flex;
+	text-align: left;
+}
+
+div.main section.page3 .page-container .live4-description_img {
+    width: 35%;
+    height: auto;
+}
+
+div.main section.page3 .page-container .live4-description p {
+	width: 65%;
+}
+
+div.main section.page3 .page-container .live4-description_img img {
+    width: 100%;
+}
+
+div.main section.page8 .button:hover {
 	color: #6253C1;
 }
 
@@ -542,7 +570,7 @@ div.main section.page-4 .features-list ul {
 	line-height: 3rem;
 }
 
-div.main section.page2 div.hex-player-play-smoking {
+div.main section.page4 div.hex-player-play-smoking {
     margin: 0 auto 10px;
     width: 180px;
     height: 180px;
@@ -551,13 +579,12 @@ div.main section.page2 div.hex-player-play-smoking {
     background-image: url(img/hex-player-play.svg);
 }
 
-div.main section.page2 div.hex-player-play-smoking:hover {
+div.main section.page4 div.hex-player-play-smoking:hover {
     transition: all .5s ease-in-out;
     transform: scale(1.15);
 }
 
-
-div.main section.page3 div.hex-player-play-superres {
+div.main section.page5 div.hex-player-play-superres {
     margin: 0 auto 10px;
     width: 180px;
     height: 180px;
@@ -566,12 +593,20 @@ div.main section.page3 div.hex-player-play-superres {
     background-image: url(img/hex-player-play.svg);
 }
 
-div.main section.page3 div.hex-player-play-superres:hover {
+div.main section.page5 div.hex-player-play-superres:hover {
     transition: all .5s ease-in-out;
     transform: scale(1.15);
 }
 
-div.main section.page4 div.hex-player-play-ocr {
+div.main section.page3 div.hex-live4 {
+    margin: 0px auto 10px;
+    width: 110px;
+    height: 110px;
+    background-size: 110px 110px;
+    background-image: url(img/hex-live4.png);
+}
+
+div.main section.page6 div.hex-player-play-ocr {
     margin: 0 auto 10px;
     width: 180px;
     height: 180px;
@@ -580,16 +615,16 @@ div.main section.page4 div.hex-player-play-ocr {
     background-image: url(img/hex-player-play.svg);
 }
 
-div.main section.page4 div.hex-player-play-ocr:hover {
+div.main section.page6 div.hex-player-play-ocr:hover {
     transition: all .5s ease-in-out;
     transform: scale(1.15);
 }
 
-div.main section.page4 div.vg_frozen_container {
+div.main section.page6 div.vg_frozen_container {
 	display: none;
 }
 
-div.main section.page5 div.hex-player-play-shd {
+div.main section.page7 div.hex-player-play-shd {
     margin: 0 auto 10px;
     width: 180px;
     height: 180px;
@@ -598,7 +633,7 @@ div.main section.page5 div.hex-player-play-shd {
     background-image: url(img/hex-player-play.svg);
 }
 
-div.main section.page5 div.hex-player-play-shd:hover {
+div.main section.page7 div.hex-player-play-shd:hover {
     transition: all .5s ease-in-out;
     transform: scale(1.15);
 }
@@ -617,20 +652,12 @@ div.main section.page9 div.column h4 {
 	font-size: 20px;
 }
 
-div.main section.page7 div.hex-player, div.main section.page9 div.hex-player {
+div.main section.page8 div.hex-player, div.main section.page9 div.hex-player {
 	margin: 0px auto 10px;
 	width: 110px;
 	height: 110px;
 	background-size: 110px 110px;
 	background-image: url(img/hex-play.png);
-}
-
-div.main section.page9 div.hex-live4 {
-	margin: 0px auto 10px;
-	width: 110px;
-	height: 110px;
-	background-size: 110px 110px;
-	background-image: url(img/hex-live4.png);
 }
 
 div.main section.page9 div.hex-brain {
