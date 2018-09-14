@@ -56,22 +56,22 @@ $(document).ready(function() {
 $(document).ready(function() {
     
     $('.hex-player-play-smoking').click(function () {
-        $('.page2.overlay, #page2 div.page-container').fadeOut(1000);
+        $('.page4.overlay, #page4 div.page-container').fadeOut(1000);
         players.smoking.play();
     });
 
     $('.hex-player-play-superres').click(function () {
-        $('.page3.overlay, #page3 div.page-container').fadeOut(1000);
+        $('.page5.overlay, #page5 div.page-container').fadeOut(1000);
         players.superRes.player.play();
     });
     
     $('.hex-player-play-ocr').click(function () {
-        $('.page4.overlay, #page4 div.page-container').fadeOut(1000);
+        $('.page6.overlay, #page6 div.page-container').fadeOut(1000);
         players.ocr.player.play();
     });
     
-    $('.hex-player-play-shd, .page5 .play-button-label').click(function () {
-        $('.page5.overlay, #page5 div.page-container').fadeOut(1000);
+    $('.hex-player-play-shd, .page7 .play-button-label').click(function () {
+        $('.page7.overlay, #page7 div.page-container').fadeOut(1000);
         players.shd.player.play();
     });
     
