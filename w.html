@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>VideoGorillas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/lity.css">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="vgplayer/vgplayer.min.css">
+    <script type="text/javascript" src="vgplayer/vgplayer.js"></script>
+    <script type="text/javascript" src="vgplayer/timecodeocr.js"></script>
+    <script src="js/playerInit.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="icons/manifest.json">
+	<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#ff4664">
+	<link rel="shortcut icon" href="icons/favicon.ico">
+	<meta name="msapplication-config" content="icons/browserconfig.xml">
+	<meta name="theme-color" content="#ff0000">
+    <meta name="keywords" content="Videogorillas, Video Gorillas, Post-production, Special effects, Film remastering, Bigfoot, VFX">
+</head>
+<body id="home">
+	<div class="video-back"
+	  data-vide-bg="mp4: img/bg.mp4, ogv: img/bg.ogv" data-vide-options="loop: true, muted: true, position: 0% 0%">
+	</div>
+    <div class="wrapper">
+		<div class="main">
+		    <section class="page1 section-no-border">
+				<div class="page-container">
+					<div class="vg-logo">
+					</div>
+			        <h1>VideoGorillas</h1>
+			        <h3>Extreme video innovation.</h3>
+			        <div class="buttons">
+				        <a class="button" href="#who">Who We Are</a>
+						<a class="button" href="#contact">Contact Us</a>
+					</div>
+			    </div>
+		    </section>
+
+			<section class="page2 section-no-border">
+				<div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-gorilla"></div>
+					<h2>BIGFOOT</h2>
+					<div class="bigfoot-description">
+						<p>Bigfoot is a scalable, lightweight proprietary technology that leverages VideoGorillas’ patented
+                            computer vision/visual analysis, Frequency Domain Descriptor (FDD), and machine learning technology.<br><br>
+                            It is designed to automate the manual-labor intensive conform process (which matches an original
+                            frame of film to the final edited work) and the compare process (which compares unique or common
+                            frames between different film cuts) by finding like “interest points” common across a series of
+                            images or frames of film.
+						</p>
+                        <div class="bigfoot-description_img">
+                            <img src="img/bf_matching.jpg"/>
+                        </div>
+					</div>
+					<div class="buttons">
+						<a class="button" href="//kote.videogorillas.com/vmir/videogorillascom/bigfoot_overview_reelthing_cutdown_v1.pdf" target="_blank">Presentation</a>
+                        <a class="button" href="bigfoot">Quick Demo</a>
+					</div>
+				</div>
+			</section>
+
+            <section class="page3 section-no-border">
+                <div class="section-logo"></div>
+                <div class="page-container">
+                    <div class="hex hex-live4"></div>
+                    <h2>LIVE4</h2>
+                    <div class="live4-description">
+                        <div class="live4-description_img">
+                            <img src="img/nexus_iphone6_img.png"/>
+                        </div>
+                        <p>The LIVE4 App makes sharing video instantaneous. Begin streaming LIVE over your cellular connection
+                            from your GoPro camera with the touch of a button. Let others see what your camera sees as it is happening.
+                            Login with your Facebook account, start broadcasting.
+                            — Live stream to your Facebook wall, your page or group
+                            — Control stream privacy Public, Friends or Only Me
+                            — See live comments in the app during your broadcast
+                            — Full remote control of starting and stopping the camera
+                            — See what your camera sees when you broadcast with live preview
+                            — Live sharing with the touch of a button
+                            — Automatic streaming via your cellular network</p>
+                    </div>
+                    <div class="buttons">
+                        <a class="button" href="https://live4.io/" target="_blank">LIVE4 WEBSITE</a>
+                    </div>
+                </div>
+            </section>
+
+		    <section class="page4 section-no-border" id="page4">
+                <div class="page4 overlay"></div>
+                <div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-player-play-smoking"></div>
+					<div class="play-button-label"></div>
+					<h3>Do you need to detect nudity, profanity, smoking or any other standards&amp;practices in a video? Click play for smoking detection demo</h3>
+					<h1>STANDARDS &amp; PRACTICES</h1>
+				</div>
+				<div id="playerContainerSmoking" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
+				
+		    </section>
+            
+		    <section class="page5 section-no-border" id="page5">
+                <div class="page5 overlay"></div>
+                <div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-player-play-superres"></div>
+					<div class="play-button-label"></div>
+					<h3>Same movie, but better. Check out our super resolution demo</h3>
+					<h1>SUPER RESOLUTION</h1>
+				</div>
+				<div id="playerContainerSuperRes" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
+				
+		    </section>
+            
+		    <section class="page6 section-no-border" id="page6">
+                <div class="page6 overlay"></div>
+                <div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-player-play-ocr"></div>
+					<div class="play-button-label"></div>
+					<h3>Play video. Pause it. Wait for the timecode detection frame to appear</h3>
+					<h1>OCR TIMECODE READER</h1>
+				</div>
+				<div id="playerOCR" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
+				
+		    </section>
+            
+		    <section class="page7 section-no-border" id="page7">
+                <div class="page7 overlay"></div>
+                <div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-player-play-shd"></div>
+					<div class="play-button-label">Click here to see how we can detect scene breaks in a movie</div>
+					<h1>SHOTS DETECTION</h1>
+				</div>
+				<div id="playerContainerShD" style="position:absolute; top:0; bottom:0; left:0; right:0; z-index:-1;"></div>
+				
+		    </section>
+		    <section class="page8">
+				<div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-gorilla">
+					</div>
+					<h2>Who We Are</h2>
+					<h3>If juice : then concentrate.</h3>
+
+			        <div class="buttons">
+						<a class="button" href="#more-who" data-lity>Learn More</a>
+					</div>
+
+					<div id="more-who" class="lity-hide">
+						<h2>Who We Are</h2>
+						<p>Video Gorillas develops state-of-the-art video technology incorporating machine learning, neural networks, visual analysis, object recognition, and live streaming.<br><br>
+
+Our customers include film studios, broadcasters, post-production companies, advertising agencies, media platforms, and start-ups. Gorilla products have been thoughtfully designed by media professionals that have exceptional business and technical expertise, as well as deep knowledge and experience with media workflows.<br><br>
+
+Video Gorillas makes the seemingly impossible possible. If modern software development was juice, Video Gorillas would be the concentrate.</p>
+					</div>
+				</div>
+		    </section>
+
+		    <section class="page9">
+				<div class="section-logo"></div>
+				<div class="page-container">
+					<div class="hex hex-work">
+					</div>
+					<h2>What We Do</h2>
+					<h3>Video analysis, artificial intelligence... basically magic.</h3>
+
+			        <div class="buttons">
+						<a class="button" href="#more-what" data-lity>Learn More</a>
+					</div>
+
+					<div id="more-what" class="lity-hide">
+						<h2>What We Do</h2>
+						<p>Video Gorillas is a media-focused product and services company that builds cool, unique viewing experiences for our customers through cutting edge features and architectures.</p>
+						<h4>Our areas of expertise include...</h4>
+						<ul>
+							<li>Development and optimization for computer vision</li>
+							<li>Image, video, and audio analysis with focus on image fingerprinting and search</li>
+							<li>Motion analysis</li>
+							<li>Machine learning (neural networks, deep learning, supervised and unsupervised learning)</li>
+							<li>Natural language processing</li>
+							<li>Video engineering and processing</li>
+							<li>Web applications with focus on video streaming</li>
+							<li>System performance optimization</li>
+							<li>Augmented reality</li>
+							<li>High-load computing and scalability</li>
+							<li>Architecture and implementation of hybrid and cloud-based workflows for media platforms</li>
+						</ul>
+					</div>
+				</div>
+		    </section>
+            <section class="page10">
+                <div class="section-logo"></div>
+                <div class="page-container">
+                    <div class="hex hex-people">
+                    </div>
+                    <h2>Our Story</h2>
+                    <h3>Breaking boundaries.</h3>
+
+                    <div class="buttons">
+                        <a class="button" href="#more-our" data-lity>Learn More</a>
+                        <a class="button" href="https://www.businesswire.com/news/home/20180913005772/en/Video-Gorillas%E2%80%99-Groundbreaking-Bigfoot-Frame-Compare-Solution" target="_blank">Press Release</a>
+                    </div>
+
+                    <div id="more-our" class="lity-hide">
+                        <h2>Our Story</h2>
+                        <p>Video Gorillas is an extreme and hardcore crew of engineers who are compulsively, creatively driven to push the boundaries of technical possibility.<br><br>
+
+                            Over the past 10 years we’ve evolved into an advanced media technology company. We are headquartered in Los Angeles with engineering based in Kiev.<br><br>
+
+                            Our Gorillas include talented developers, video engineers, system engineers, machine learning experts, serial inventors in image analysis, and former executives from Sony and P&amp;G.</p>
+
+                        <h5>The core team includes...</h5>
+                        <ul>
+                            <li>Jason Brahms, CEO</li>
+                            <li>Alex Zhukov, CTO</li>
+                            <li>Valentina Ievleva, COO</li>
+                            <li>Andrew Yakovenko, Chief Science Guru</li>
+                            <li>Anton Linevich, Solution Rockstar</li>
+                            <li>Oles Petriv, The Brain aka Machine Learning Lead</li>
+                            <li>Gennady Linevich, Senior Software Jedi</li>
+                            <li>Oleksandr Chugai, Senior Software Hacker</li>
+                            <li>Oleksii Sevruk, Senior Systems Gorilla</li>
+                            <li>Helen Zhukova, Front-end Ninja</li>
+                            <li><a class="underline" href="http://research.google.com/pubs/AndrewRabinovich.html" target="_blank">Andrew Rabinovich</a>, Technical Advisor Jedi Master</li>
+                            <li>Anna Pogribnyak, QA Fashionista</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+		    <section class="page11 section-no-border">
+				<div class="section-logo"></div>
+				<div class="page-container">
+					<h2 id="contact-headline">Hit Us Up</h2>
+					<p id="contact-copy">Contact Video Gorillas at <a href="mailto:info@videogorillas.com" class="underline">info@videogorillas.com</a> today to find out what we can do to change your life.</p>
+				</div>
+		    </section>
+		</div>
+	</div>
+
+    <script type="text/javascript">
+        var players = {};
+        players.smoking = playerInit("elementsSmoking", "playerContainerSmoking", "//kote.videogorillas.com/vmir/videogorillascom/smoking-dash/file.mpd",
+                "//kote.videogorillas.com/vmir/videogorillascom/smoking.mp4", false, false, ["//kote.videogorillas.com/vmir/videogorillascom/smoking.srt"],
+                ["//kote.videogorillas.com/vmir/about_that_oldie.m4a", "//kote.videogorillas.com/vmir/the_chase.m4a"]);
+        
+        players.superRes = playerInit("elementsSR", "playerContainerSuperRes", "//kote.videogorillas.com/vmir/videogorillascom/superres-demo-dash/file.mpd",
+                "//kote.videogorillas.com/vmir/videogorillascom/superres-demo.mp4", false, false);
+        
+        players.ocr = playerInit("elementsOCR", "playerOCR", "//kote.videogorillas.com/vmir/car_damage_detection/TC_mpd/file.mpd",
+                "//kote.videogorillas.com/vmir/car_damage_detection/TC_AugmentedReality.mp4", true, false, ['//kote.videogorillas.com/vmir/car-inspection.xml'],
+                ['//kote.videogorillas.com/vmir/about_that_oldie.m4a', '//kote.videogorillas.com/vmir/the_chase.m4a']);
+        
+        players.shd = playerInit("elementsShd", "playerContainerShD", "//kote.videogorillas.com/vmir/videogorillascom/shotsDetection-dash/file.mpd",
+                "//kote.videogorillas.com/vmir/videogorillascom/shotsDetection.mov", false, false, ["//kote.videogorillas.com/vmir/videogorillascom/shotsDetection.srt"]);
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-84190702-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
