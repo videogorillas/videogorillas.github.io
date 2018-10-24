@@ -1,5 +1,5 @@
-let jasonUrl = "https://segmenter.live4.io/api/streams?userId=jason@videogorillas.com&count=1";
-let antonUrl = "https://segmenter.live4.io/api/streams?userId=anton@videogorillas.com&count=1";
+let jasonUrl = "https://live4missions.com/api/streams?userId=anna@videogorillas.com&count=1";
+let antonUrl = "https://live4missions.com/api/streams?userId=anton@videogorillas.com&count=1";
 
 function promiseToFetchJason() {
     return new Promise(resolveJason => {
@@ -44,7 +44,7 @@ let promiseJason = new Promise(resolve => {
                 console.log("ga jason ", s);
                 clearInterval(resolveJ);
 
-                playerJason.loadUrl("https://segmenter.live4.io" + s.mpd, function (err) {
+                playerJason.loadUrl("https://live4missions.com" + s.mpd, function (err) {
                     if (!err) {
                         resolve(playerJason);
                     }
@@ -74,7 +74,7 @@ let promisAnton = new Promise(resolve => {
                 console.log("ga anton ", s);
                 clearInterval(resolveA);
 
-                playerAnton.loadUrl("https://segmenter.live4.io" + s.mpd, function (err) {
+                playerAnton.loadUrl("https://live4missions.com" + s.mpd, function (err) {
                     if (!err) {
                         resolve(playerAnton);
                     }
