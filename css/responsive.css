@@ -26,10 +26,16 @@
 	div.main section.page-1 div.learn-more {
 		font-size: 15px;
 	}
-	div.main section.page-2 .icon-player-description {
-		flex: 2;
-		font-size: 24px;
-	}
+    div.main section.page2 .page-container .buttons {
+        display: inline-grid;
+    }
+    div.main section.page2 .page-container .buttons a {
+        margin: 5px 0;
+    }
+    div.main section.page-2 .icon-player-description {
+        flex: 2;
+        font-size: 24px;
+    }
 	div.main section.page4 div.column {
 		width: 210px;
 	}
