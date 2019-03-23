@@ -1,0 +1,103 @@
+<html>
+
+<body>
+    <video src="010608.mp4" style="position: absolute; top: 0; left: 0;"></video>
+    <video id="master" src="064242.mp4" width="1743" height="1167" style="position: absolute; 
+    top: 194px; left: 245px; 
+    width: 1743px; height: 1167px; 
+    margin: 0px; padding: 0px; 
+    object-fit: fill;
+        mix-blend-mode: normal;
+        opacity: 0.84;"></video>
+    <pre style="color: white; position: absolute; top: 420px; left: 420px; ">
+    Keyboard shortcuts:
+    "-" - more transparent
+    "=" - more opaque
+    "m" - switch blending mode
+    "M" - switch blending mode back
+    Arrow Keys - change image position
+    Shift + ArrowDown - grow image vertically
+    Shift + ArrowUp - shrink image vertically
+    Shift + ArrowLeft - grow image horizonatally
+    Shift + ArrowRight - shrink image horizonatally
+    </pre>
+</body>
+<script>
+    // var modes = "normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|difference|exclusion|hue|saturation|color|luminosity".split("|")
+    var modes = "normal|difference|exclusion".split("|")
+    var ga = document.getElementById("master")
+
+    window.document.addEventListener("keydown", function (e) {
+        switch (e.key) {
+            case "=": {
+                ga.style.opacity = Math.min(1.0, parseFloat(ga.style.opacity) + 0.1)
+                break;
+            }
+            case "-": {
+                ga.style.opacity = Math.max(0.0, parseFloat(ga.style.opacity) - 0.1)
+                break;
+            }
+            case "m":
+            case "M": {
+                var mode = ga.style["mix-blend-mode"]
+                var idx = Math.max(0, modes.indexOf(mode))
+                if (e.shiftKey) {
+                    idx--
+                } else {
+                    idx++
+                }
+                if (idx >= modes.length) {
+                    idx = 0
+                } else if (idx <= 0) {
+                    idx = modes.length - 1
+                }
+                var newmode = modes[idx]
+                ga.style["mix-blend-mode"] = newmode
+                break;
+            }
+            case "ArrowDown": {
+                e.preventDefault()
+                if (!e.shiftKey) {
+                    ga.style.top = (parseInt(ga.style.top) + 1) + "px"
+                } else {
+                    var h = parseInt(ga.style.height) + 1
+                    ga.style.height = h + "px"
+                    ga.height = h
+                }
+                break;
+            }
+            case "ArrowUp": {
+                e.preventDefault()
+                if (!e.shiftKey) {
+                    ga.style.top = (parseInt(ga.style.top) - 1) + "px"
+                } else {
+                    var h = parseInt(ga.style.height) - 1
+                    ga.style.height = h + "px"
+                    ga.height = h
+                }
+                break;
+            }
+            case "ArrowLeft": {
+                e.preventDefault()
+                if (!e.shiftKey) {
+                    ga.style.left = (parseInt(ga.style.left) - 1) + "px"
+                } else {
+                    ga.style.width = (parseInt(ga.style.width) - 1) + "px"
+                }
+                break;
+            }
+            case "ArrowRight": {
+                e.preventDefault()
+                if (!e.shiftKey) {
+                    ga.style.left = (parseInt(ga.style.left) + 1) + "px"
+                } else {
+                    ga.style.width = (parseInt(ga.style.width) + 1) + "px"
+                }
+                break;
+            }
+        }
+    })
+
+</script>
+
+</html>

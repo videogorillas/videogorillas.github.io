@@ -1,0 +1,80 @@
+<html>
+<style>
+    .graphic-or-whatever {
+        background:
+            url(010608.png),
+            url(064242.png)
+    }
+</style>
+
+<body>
+    <img src="010608.png" style="position: absolute; top: 0; left: 0;" />
+    <img id="master" src="064242.png"
+        style="position: absolute; top: 194; left: 246; width: 1741px; height: 1167px; mix-blend-mode: difference;" />
+</body>
+<script>
+    var modes = "normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|difference|exclusion|hue|saturation|color|luminosity".split("|")
+    var ga = document.getElementById("master")
+
+    window.document.addEventListener("keydown", function (e) {
+        switch (e.key) {
+            case "m":
+            case "M": {
+                var mode = ga.style["mix-blend-mode"]
+                var idx = Math.max(0, modes.indexOf(mode))
+                if (e.shiftKey) {
+                    idx--
+                } else {
+                    idx++
+                }
+                if (idx >= modes.length) {
+                    idx = 0
+                } else if (idx <= 0) {
+                    idx = modes.length - 1
+                }
+                var newmode = modes[idx]
+                ga.style["mix-blend-mode"] = newmode
+                break;
+            }
+            case "ArrowDown": {
+                e.preventDefault()
+                if (!e.shiftKey) {
+                    ga.style.top = (parseInt(ga.style.top) + 1) + "px"
+                } else {
+                    ga.style.height = (parseInt(ga.style.height) + 1) + "px"
+                }
+                break;
+            }
+            case "ArrowUp": {
+                e.preventDefault()
+                if (!e.shiftKey) {
+                    ga.style.top = (parseInt(ga.style.top) - 1) + "px"
+                } else {
+                    ga.style.height = (parseInt(ga.style.height) - 1) + "px"
+                }
+                break;
+            }
+            case "ArrowLeft": {
+                e.preventDefault()
+                if (!e.shiftKey) {
+                    ga.style.left = (parseInt(ga.style.left) - 1) + "px"
+                } else {
+                    ga.style.width = (parseInt(ga.style.width) - 1) + "px"
+                }
+                break;
+            }
+            case "ArrowRight": {
+                e.preventDefault()
+                if (!e.shiftKey) {
+                    ga.style.left = (parseInt(ga.style.left) + 1) + "px"
+                } else {
+                    ga.style.width = (parseInt(ga.style.width) + 1) + "px"
+                }
+                break;
+            }
+        }
+    })
+
+</script>
+
+</html>
