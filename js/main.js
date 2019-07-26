@@ -5,10 +5,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['welcome', 'bigfoot', 'live4', 'smoking', 'superresolution', 'ocr', 'shotsdetection', 'who', 'what', 'story', 'contact'],
+        anchors:['welcome', 'bigfoot', 'live4', 'superresolution', 'smoking', 'ocr', 'shotsdetection', 'who', 'what', 'story', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['VideoGorillas', 'Bigfoot', 'Live4', 'Smoking demo', 'Super Resolution', 'OCR Timecode Reader', 'Shots Detection', 'Who We Are', 'What We Do', 'Our story', 'Hit Us Up'],
+        navigationTooltips: ['VideoGorillas', 'Bigfoot', 'Live4', 'Super Resolution', 'Smoking demo', 'OCR Timecode Reader', 'Shots Detection', 'Who We Are', 'What We Do', 'Our story', 'Hit Us Up'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -54,17 +54,17 @@ $(document).ready(function() {
 // Player
 
 $(document).ready(function() {
-    
-    $('.hex-player-play-smoking').click(function () {
+
+    $('.hex-player-play-superres').click(function () {
         $('.page4.overlay, #page4 div.page-container').fadeOut(1000);
+        players.superRes.player.play();
+    });
+
+    $('.hex-player-play-smoking').click(function () {
+        $('.page5.overlay, #page5 div.page-container').fadeOut(1000);
         players.smoking.play();
     });
 
-    $('.hex-player-play-superres').click(function () {
-        $('.page5.overlay, #page5 div.page-container').fadeOut(1000);
-        players.superRes.player.play();
-    });
-    
     $('.hex-player-play-ocr').click(function () {
         $('.page6.overlay, #page6 div.page-container').fadeOut(1000);
         players.ocr.player.play();
