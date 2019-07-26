@@ -1,0 +1,27 @@
+<MPD type="dynamic" minBufferTime="PT3.000S" profiles="urn:mpeg:dash:profile:isoff-live:2011" mediaPresentationDuration="PT1M11.800S" availabilityStartTime="2018-05-14T14:21:03Z" minimumUpdatePeriod="PT500S" suggestedPresentationDelay="PT5S" publishTime="2018-05-14T14:21:15Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mpeg:dash:schema:mpd:2011">
+   <Period duration="PT5.320S">
+      <AdaptationSet segmentAlignment="true" bitstreamSwitching="true" contentType="video">
+         <Representation id="1" mimeType="video/mp4" codecs="avc1.640015" width="512" height="288">
+            <SegmentTemplate timescale="25" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="133" r="0" f="133"/>
+                  <S d="140" r="0" f="140"/>
+                  <S d="128" r="0" f="128"/>
+                  <S d="120" r="0" f="120"/>
+                  <S d="133" r="0" f="133"/>
+                  <S d="123" r="0" f="123"/>
+                  <S d="100" r="0" f="100"/>
+                  <S d="141" r="0" f="141"/>
+                  <S d="112" r="0" f="112"/>
+                  <S d="130" r="0" f="130"/>
+                  <S d="115" r="0" f="115"/>
+                  <S d="154" r="0" f="154"/>
+                  <S d="108" r="0" f="108"/>
+                  <S d="114" r="0" f="114"/>
+                  <S d="44" r="0" f="44"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+      </AdaptationSet>
+   </Period>
+</MPD>

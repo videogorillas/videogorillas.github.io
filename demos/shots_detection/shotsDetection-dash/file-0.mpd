@@ -1,0 +1,58 @@
+<MPD type="dynamic" minBufferTime="PT3.000S" profiles="urn:mpeg:dash:profile:isoff-live:2011" mediaPresentationDuration="PT3M45.975S" availabilityStartTime="2018-05-10T13:11:38Z" minimumUpdatePeriod="PT500S" suggestedPresentationDelay="PT5S" publishTime="2018-05-10T13:11:42Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mpeg:dash:schema:mpd:2011">
+   <Period duration="PT4.963S">
+      <AdaptationSet segmentAlignment="true" bitstreamSwitching="true" contentType="video">
+         <Representation id="0" mimeType="video/mp4" codecs="avc1.640015" width="960" height="540">
+            <SegmentTemplate timescale="11988" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="59500" r="0" f="119"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="59500" r="0" f="119"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="59500" r="0" f="119"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="59500" r="0" f="119"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="59500" r="0" f="119"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="59500" r="0" f="119"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="60000" r="0" f="120"/>
+                  <S d="12000" r="0" f="24"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+      </AdaptationSet>
+   </Period>
+</MPD>
