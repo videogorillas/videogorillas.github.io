@@ -25491,7 +25491,7 @@ const MODEL_CLASSES = _nudity_classes.NUDITY_CLASSES;
 // import {SMOKING_CLASSES} from './SMOKING_CLASSES';
 // import {FOOTBALL_CLASSES} from './football_classes';
 
-const MOBILENET_MODEL_PATH = '//kote.videogorillas.com/vmir/demo_models/nudity/inception/model.json';
+const MOBILENET_MODEL_PATH = './inception/model.json';
 // '//kote.videogorillas.com/vmir/demo_models/football_model/model.json';
 // '//kote.videogorillas.com/vmir/demo_models/smoking/model.json';
 // tslint:disable-next-line:max-line-length
