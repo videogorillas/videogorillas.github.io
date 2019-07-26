@@ -25493,7 +25493,7 @@ const MODEL_CLASSES = _football_classes.FOOTBALL_CLASSES;
 // import {IMAGENET_CLASSES} from './imagenet_classes';
 // import {SMOKING_CLASSES} from './SMOKING_CLASSES';
 
-const MOBILENET_MODEL_PATH = '//kote.videogorillas.com/vmir/demo_models/football_model/model.json';
+const MOBILENET_MODEL_PATH = './football_model/model.json';
 // '//kote.videogorillas.com/vmir/demo_models/smoking/model.json';
 // tslint:disable-next-line:max-line-length
 // 'https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json';

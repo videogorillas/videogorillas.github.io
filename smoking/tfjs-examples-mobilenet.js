@@ -25099,7 +25099,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
  * =============================================================================
  */
 
-const MOBILENET_MODEL_PATH = '//kote.videogorillas.com/vmir/demo_models/smoking/model.json';
+const MOBILENET_MODEL_PATH = './model/model.json';
 // tslint:disable-next-line:max-line-length
 // 'https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json';
 

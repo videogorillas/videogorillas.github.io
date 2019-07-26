@@ -1,0 +1,93 @@
+<MPD type="static" minBufferTime="PT3S" profiles="urn:mpeg:dash:profile:isoff-live:2011" mediaPresentationDuration="PT1M11.800S" vgTotalDurationSec="71.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mpeg:dash:schema:mpd:2011">
+   <Period duration="PT1M11.800S">
+      <AdaptationSet segmentAlignment="true" bitstreamSwitching="true" contentType="audio">
+         <Representation id="3" mimeType="audio/mp4" codecs="mp4a.40.2" audioSamplingRate="48000">
+            <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+            <SegmentTemplate timescale="48000" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="240640" r="0"/>
+                  <S d="239616" r="0"/>
+                  <S d="240640" r="0"/>
+                  <S d="239616" r="0"/>
+                  <S d="239616" r="0"/>
+                  <S d="240640" r="0"/>
+                  <S d="239616" r="0"/>
+                  <S d="239616" r="0"/>
+                  <S d="240640" r="0"/>
+                  <S d="239616" r="0"/>
+                  <S d="240640" r="0"/>
+                  <S d="239616" r="0"/>
+                  <S d="239616" r="0"/>
+                  <S d="240640" r="0"/>
+                  <S d="87040" r="0"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+      </AdaptationSet>
+      <AdaptationSet segmentAlignment="true" bitstreamSwitching="true" contentType="video">
+         <Representation id="0" mimeType="video/mp4" codecs="avc1.640015" width="1920" height="1080">
+            <SegmentTemplate timescale="25" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="133" r="0" f="133"/>
+                  <S d="140" r="0" f="140"/>
+                  <S d="128" r="0" f="128"/>
+                  <S d="120" r="0" f="120"/>
+                  <S d="133" r="0" f="133"/>
+                  <S d="123" r="0" f="123"/>
+                  <S d="100" r="0" f="100"/>
+                  <S d="141" r="0" f="141"/>
+                  <S d="112" r="0" f="112"/>
+                  <S d="130" r="0" f="130"/>
+                  <S d="115" r="0" f="115"/>
+                  <S d="154" r="0" f="154"/>
+                  <S d="108" r="0" f="108"/>
+                  <S d="114" r="0" f="114"/>
+                  <S d="44" r="0" f="44"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+         <Representation id="1" mimeType="video/mp4" codecs="avc1.640015" width="512" height="288">
+            <SegmentTemplate timescale="25" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="133" r="0" f="133"/>
+                  <S d="140" r="0" f="140"/>
+                  <S d="128" r="0" f="128"/>
+                  <S d="120" r="0" f="120"/>
+                  <S d="133" r="0" f="133"/>
+                  <S d="123" r="0" f="123"/>
+                  <S d="100" r="0" f="100"/>
+                  <S d="141" r="0" f="141"/>
+                  <S d="112" r="0" f="112"/>
+                  <S d="130" r="0" f="130"/>
+                  <S d="115" r="0" f="115"/>
+                  <S d="154" r="0" f="154"/>
+                  <S d="108" r="0" f="108"/>
+                  <S d="114" r="0" f="114"/>
+                  <S d="44" r="0" f="44"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+         <Representation id="2" mimeType="video/mp4" codecs="avc1.640015" width="144" height="80">
+            <SegmentTemplate timescale="25" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="133" r="0" f="133"/>
+                  <S d="140" r="0" f="140"/>
+                  <S d="128" r="0" f="128"/>
+                  <S d="120" r="0" f="120"/>
+                  <S d="133" r="0" f="133"/>
+                  <S d="123" r="0" f="123"/>
+                  <S d="100" r="0" f="100"/>
+                  <S d="141" r="0" f="141"/>
+                  <S d="112" r="0" f="112"/>
+                  <S d="130" r="0" f="130"/>
+                  <S d="115" r="0" f="115"/>
+                  <S d="154" r="0" f="154"/>
+                  <S d="108" r="0" f="108"/>
+                  <S d="114" r="0" f="114"/>
+                  <S d="44" r="0" f="44"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+      </AdaptationSet>
+   </Period>
+</MPD>
