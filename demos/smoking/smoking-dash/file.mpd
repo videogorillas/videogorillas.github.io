@@ -1,0 +1,113 @@
+<MPD type="static" minBufferTime="PT3S" profiles="urn:mpeg:dash:profile:isoff-live:2011" mediaPresentationDuration="PT1M37.180S" vgTotalDurationSec="97.17999999999999" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mpeg:dash:schema:mpd:2011">
+   <Period duration="PT1M37.180S">
+      <AdaptationSet segmentAlignment="true" bitstreamSwitching="true" contentType="audio">
+         <Representation id="3" mimeType="audio/mp4" codecs="mp4a.40.2" audioSamplingRate="44100">
+            <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+            <SegmentTemplate timescale="44100" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="97280" r="0"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+      </AdaptationSet>
+      <AdaptationSet segmentAlignment="true" bitstreamSwitching="true" contentType="video">
+         <Representation id="1" mimeType="video/mp4" codecs="avc1.640015" width="512" height="288">
+            <SegmentTemplate timescale="24000" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="123123" r="0" f="123"/>
+                  <S d="160160" r="0" f="160"/>
+                  <S d="77077" r="0" f="77"/>
+                  <S d="120120" r="0" f="120"/>
+                  <S d="146146" r="0" f="146"/>
+                  <S d="94094" r="0" f="94"/>
+                  <S d="166166" r="0" f="166"/>
+                  <S d="88088" r="0" f="88"/>
+                  <S d="106106" r="0" f="106"/>
+                  <S d="152152" r="0" f="152"/>
+                  <S d="89089" r="0" f="89"/>
+                  <S d="119119" r="0" f="119"/>
+                  <S d="120120" r="0" f="120"/>
+                  <S d="130130" r="0" f="130"/>
+                  <S d="110110" r="0" f="110"/>
+                  <S d="166166" r="0" f="166"/>
+                  <S d="119119" r="0" f="119"/>
+                  <S d="75075" r="0" f="75"/>
+                  <S d="120120" r="0" f="120"/>
+                  <S d="50040" r="0" f="50"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+         <Representation id="0" mimeType="video/mp4" codecs="avc1.640015" width="1280" height="720">
+            <SegmentTemplate timescale="24000" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="123123" r="0" f="123"/>
+                  <S d="160160" r="0" f="160"/>
+                  <S d="77077" r="0" f="77"/>
+                  <S d="120120" r="0" f="120"/>
+                  <S d="146146" r="0" f="146"/>
+                  <S d="94094" r="0" f="94"/>
+                  <S d="166166" r="0" f="166"/>
+                  <S d="88088" r="0" f="88"/>
+                  <S d="106106" r="0" f="106"/>
+                  <S d="152152" r="0" f="152"/>
+                  <S d="89089" r="0" f="89"/>
+                  <S d="119119" r="0" f="119"/>
+                  <S d="120120" r="0" f="120"/>
+                  <S d="130130" r="0" f="130"/>
+                  <S d="110110" r="0" f="110"/>
+                  <S d="166166" r="0" f="166"/>
+                  <S d="119119" r="0" f="119"/>
+                  <S d="75075" r="0" f="75"/>
+                  <S d="120120" r="0" f="120"/>
+                  <S d="50040" r="0" f="50"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+         <Representation id="2" mimeType="video/mp4" codecs="avc1.640015" width="144" height="80">
+            <SegmentTemplate timescale="24000" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="123123" r="0" f="123"/>
+                  <S d="160160" r="0" f="160"/>
+                  <S d="77077" r="0" f="77"/>
+                  <S d="120120" r="0" f="120"/>
+                  <S d="146146" r="0" f="146"/>
+                  <S d="94094" r="0" f="94"/>
+                  <S d="166166" r="0" f="166"/>
+                  <S d="88088" r="0" f="88"/>
+                  <S d="106106" r="0" f="106"/>
+                  <S d="152152" r="0" f="152"/>
+                  <S d="89089" r="0" f="89"/>
+                  <S d="119119" r="0" f="119"/>
+                  <S d="120120" r="0" f="120"/>
+                  <S d="130130" r="0" f="130"/>
+                  <S d="110110" r="0" f="110"/>
+                  <S d="166166" r="0" f="166"/>
+                  <S d="119119" r="0" f="119"/>
+                  <S d="75075" r="0" f="75"/>
+                  <S d="120120" r="0" f="120"/>
+                  <S d="50040" r="0" f="50"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+      </AdaptationSet>
+   </Period>
+</MPD>

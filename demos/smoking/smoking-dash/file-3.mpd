@@ -1,0 +1,33 @@
+<MPD type="dynamic" minBufferTime="PT3.000S" profiles="urn:mpeg:dash:profile:isoff-live:2011" mediaPresentationDuration="PT1M37.221S" availabilityStartTime="2018-05-01T17:53:36Z" minimumUpdatePeriod="PT500S" suggestedPresentationDelay="PT5S" publishTime="2018-05-01T17:55:55Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mpeg:dash:schema:mpd:2011">
+   <Period duration="PT5.015S">
+      <AdaptationSet segmentAlignment="true" bitstreamSwitching="true" contentType="audio">
+         <Representation id="3" mimeType="audio/mp4" codecs="mp4a.40.2" audioSamplingRate="44100">
+            <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+            <SegmentTemplate timescale="44100" media="stream-$RepresentationID$.$Number$.m4s" startNumber="1" initialization="stream-$RepresentationID$.0.m4s">
+               <SegmentTimeline>
+                  <S t="0" d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="220160" r="0"/>
+                  <S d="221184" r="0"/>
+                  <S d="97280" r="0"/>
+               </SegmentTimeline>
+            </SegmentTemplate>
+         </Representation>
+      </AdaptationSet>
+   </Period>
+</MPD>
