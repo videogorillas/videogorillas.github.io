@@ -607,6 +607,32 @@ div.main section.page3 div.hex-live4 {
     background-image: url(img/hex-live4.png);
 }
 
+div.main section.page3 div.store-buttons {
+	width: 350px;
+	margin: 42px auto 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+div.main section.page3 div.store-buttons a {
+	width: 165px;
+	height: 48px;
+}
+
+div.main section.page3 div.store-buttons a.grow {
+	transition: all .2s ease-in-out;
+}
+
+div.main section.page3 div.store-buttons a.grow:hover {
+	transform: scale(1.05);
+}
+
+div.main section.page3 div.store-buttons a img {
+	width: inherit;
+	height: inherit;
+}
+
 div.main section.page6 div.hex-player-play-ocr {
     margin: 0 auto 10px;
     width: 180px;
