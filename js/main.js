@@ -82,10 +82,10 @@ $(document).ready(function() {
         players.superRes.player.play();
     });
 
-    $('.hex-player-play-smoking').click(function () {
-        $('.page5.overlay, #page5 div.page-container').fadeOut(1000);
-        players.smoking.play();
-    });
+    // $('.hex-player-play-smoking').click(function () {
+    //     $('.page5.overlay, #page5 div.page-container').fadeOut(1000);
+    //     players.smoking.play();
+    // });
 
     $('.hex-player-play-ocr').click(function () {
         $('.page6.overlay, #page6 div.page-container').fadeOut(1000);
